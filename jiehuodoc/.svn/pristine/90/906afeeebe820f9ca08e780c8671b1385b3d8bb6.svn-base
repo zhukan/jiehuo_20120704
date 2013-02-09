@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>账户密码</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="page">
+	<div class="top">
+		<div class="logo"><img src="images/l_01.jpg" border="0" /></div>
+	</div>
+	<div class="navbox"></div>
+	<div class="mid clearfix">
+		<div class="b_list">
+			<ul class="b_listtitle">
+				<li><a href="#" > 基本资料</a></li>
+				<li class="frist"><a href="#">帐号密码</a></li>
+				<li><a href="#">修改头像</a></li>
+			</ul>
+		</div>
+		<div class="b_main">
+			<h1>帐号密码</h1>
+			<div class="b_mainbox">
+				<table width="460" border="0" cellspacing="9" cellpadding="0">
+				  <tr>
+					<th>登录名：</th>
+					<td><div class="b_word">s****8@163.com</div></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>当前密码：</th>
+					<td><input type="text" class="b_text" name="" value="" /></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>新密码：</th>
+					<td><input type="text" class="b_text" name="" value="" /></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>重复新密码：</th>
+					<td><input type="text" class="b_text" name="" value="" /></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th></th>
+					<td><input type="button" class="b_btn" name="" value=""  /></td>
+					<td>&nbsp;</td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="foot">
+		<div class="d_logo"><img src="images/l_02.jpg" border="0" /></div>
+		<div class="d_t1">©&nbsp;&nbsp;2012&nbsp;&nbsp;版权所有</div>
+		<div class="d_t2"> <a href="#">关于题库</a>&nbsp;·&nbsp;<a href="#">建议反馈</a>&nbsp;·&nbsp;<a href="#">题库协议</a>&nbsp;·&nbsp;<a href="#">帮助指南</a></div>
+	</div>
+
+
+</div>
+</body>
+</html>

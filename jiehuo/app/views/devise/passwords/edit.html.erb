@@ -1,0 +1,65 @@
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => {:method => :put}) do |f| %>
+    <div class="page">
+      <div class="for_box">
+        <div class="for_logo"><img src="../../assets/l_03.jpg" border="0"/></div>
+        <div class="for_wj">
+          <div class="for_t">重置密码</div>
+          <div class="for_n">
+            <ul class="for_tm">
+              <li>新密码:</li>
+              <li id="new_pwd_li">
+                <%= f.password_field :password, :class => "for_em" %>
+                <div style="display: none;"></div>
+              </li>
+              <li >密码确认:</li>
+              <li>
+                <%= f.password_field :password_confirmation, :class => "for_em" %>
+                <div style="display: none;"></div>
+              </li>
+              <%= f.hidden_field :reset_password_token %>
+              <li><input type="button" class="for_btn02" onclick="btn_submit()" name=""/></li>
+            </ul>
+          </div>
+          <div style="color: red;"><%= local_devise_error_messages! %> </div>
+        </div>
+      </div>
+    </div>
+<% end %>
+
+<script>
+    $(function () {
+        $("#user_new").validate({
+            rules:{
+                "user[password]":{
+                    required:true,
+                    rangelength:[6, 12]
+                },
+                "user[password_confirmation]":{
+                    required:true,
+                    rangelength:[6, 12],
+                    equalTo:'#user_password'
+                }
+            },
+            messages:{
+                "user[password]":{required:"密码不能为空"},
+                "user[password_confirmation]":{required:"重复不能为空"}
+            },
+            errorPlacement:function (error, element) {
+                $('#br_id').remove()
+                var t = element;
+                element.removeClass("error");
+                t.next("div").html(error.html());
+                t.next("div").addClass("error");
+                t.next("div").show();
+                br_id = '<br id="br_id">'
+                $('#new_pwd_li').after(br_id);
+            },
+            success:"valid"
+        })
+    })
+
+    function btn_submit() {
+        $('#user_new').submit();
+    }
+</script>
+

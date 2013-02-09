@@ -1,0 +1,34 @@
+
+<h1>Listing sections</h1>
+
+<table>
+  <tr>
+    <th>Section</th>
+    <th>Name</th>
+    <th>所属学科</th>
+    <th>Description</th>
+    <th>Creator</th>
+    <th>Modifier</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sections.each do |section| %>
+  <tr>
+    <td><%= section.section_id %></td>
+    <td><%= section.name %></td>
+    <td><%= section.project.name %></td>
+    <td><%= section.description %></td>
+    <td><%= section.creator %></td>
+    <td><%= section.modifier %></td>
+    <td><%= link_to 'Show', cms_section_path(section) %></td>
+    <td><%= link_to 'Edit', edit_cms_section_path(section) %></td>
+    <td><%= link_to 'Destroy', cms_section_path(section), confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Section', new_cms_section_path %>

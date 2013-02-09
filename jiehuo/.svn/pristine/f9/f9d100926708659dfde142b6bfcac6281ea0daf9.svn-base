@@ -1,0 +1,12 @@
+<div class="an_quebox clearfix" id="div_comments_<%=h @answer_id%>" >
+  <div class="quebox_t"><img src="/assets/bg_tw.jpg" border="0" /></div>
+  <div class="quebox_m">
+    <dl class="quetitle" id="dl_comments_<%=h @answer_id%>">
+      <% comments.each do |comment|  %>
+          <%= render :partial => 'comment',:object=>comment %>
+      <%end%>
+    </dl>
+    <div class="an_kong"></div>
+  </div>
+</div>
+<%= render 'form'%>

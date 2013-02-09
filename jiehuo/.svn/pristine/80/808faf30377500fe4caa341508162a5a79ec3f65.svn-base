@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  section_id: 1
+  name: MyString
+  description: MyText
+  creator: MyString
+  modifier: MyString
+
+two:
+  section_id: 2
+  name: MyString
+  description: MyText
+  creator: MyString
+  modifier: MyString

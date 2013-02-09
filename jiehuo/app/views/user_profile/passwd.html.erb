@@ -1,0 +1,56 @@
+<%= form_for @user,:url => "/user_profile/update_user_passwd",:method=>"post",:html=>{:autocomplete=>"off"} do |f| %>
+<div class="page">
+  <div class="mid clearfix">
+    <div class="b_list">
+      <ul class="b_listtitle">
+        <li><a href="/user_profile/basic" > 基本资料</a></li>
+        <li class="frist"><a href="#">帐号密码</a></li>
+        <li><a href="/user_profile/user_avatar">修改头像</a></li>
+      </ul>
+    </div>
+    <div class="b_main">
+      <h1>帐号密码</h1>
+      <div class="b_mainbox">
+        <table width="460" border="0" cellspacing="9" cellpadding="0">
+          <tr>
+            <%if notice%>
+            <p id="notice"><%= notice %></p>
+            <%end%>
+            <th>登录名：</th>
+            <td><div class="b_word"><%= @user.email  %></div></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th><span>*</span>当前密码：</th>
+            <td>
+              <%= password_field "old", "password",:class=>"b_text" %>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><span>*</span>新密码：</th>
+            <td>
+           <%= password_field "user", "password",:class=>"b_text" %>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><span>*</span>重复新密码：</th>
+            <td>
+              <%= password_field "user","password_confirmation",:class=>"b_text" %>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <button type="submit" class="b_btn"></button>
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<%end%>

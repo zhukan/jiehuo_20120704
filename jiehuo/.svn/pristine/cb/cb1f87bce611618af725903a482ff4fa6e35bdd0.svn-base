@@ -1,0 +1,26 @@
+<h1>Listing cms_domains</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cms_domains.each do |cms_domain| %>
+  <tr>
+    <td><%= cms_domain.domain_id %></td>
+    <td><%= cms_domain.name %></td>
+    <td><%= cms_domain.description %></td>
+    <td><%= cms_domain.creator %></td>
+    <td><%= cms_domain.modifier %></td>
+    <td><%= link_to 'Show',cms_domain_path(cms_domain) %></td>  <!--A此地cms_domain修改为cms_domain_path(cms_domain)-->
+    <td><%= link_to 'Edit', edit_cms_domain_path(cms_domain) %></td>
+    <td><%= link_to 'Destroy', cms_domain_path(cms_domain), :method => :delete, :confirm => '确定要删除吗?' %></td><!--#此地cms_domain修改为cms_domain_path(cms_domain)-->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Domain', new_cms_domain_path %>

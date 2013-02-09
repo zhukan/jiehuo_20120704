@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1341375346.994171:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%7690b08642d18ff80a456b52d9786f64I"logical_path;
+FI"abg.jpg;
+TI"pathname;
+FI"$$root/app/assets/images/abg.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-07-04T12:04:58+08:00;
+FI"length;
+FI"547;
+FI"digest;
+F"%3d35c9a50b859e0c771aec6aaa13495fI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

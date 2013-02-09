@@ -1,0 +1,18 @@
+<% if @error %>
+    <%case%>
+        <%when @error.messages[:followed_to_many_projects] then%>
+            alert("最多能关注12门学科哦！");
+        <%when @error.messages[:unique_followed_projects] then%>
+            alert("你已经关注过了");
+        <%else%>
+
+    <%end%>
+<%else%>
+    var selector = "#a_project_"+<%=h @followed_project.project_id%>;
+    var project_unfollow_path = "/projects/unfollow/"+<%=h @followed_project.project_id%>;
+    $(selector).children().attr("follow_state","true");
+    $("#a_follow_link").attr("href",project_unfollow_path);
+    $("#a_follow_link").html("<img src='/assets/btn14.jpg' border='0' id='img_follow' />");
+    var follow_count = Number($("#follow_count").html())+1;
+    $("#follow_count").html(follow_count);
+<%end%>

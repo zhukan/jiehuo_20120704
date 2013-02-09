@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @project.project_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+
+<p>
+  <b>所属领域:</b>
+  <%= @project.domain.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @project.creator %>
+</p>
+
+<p>
+  <b>Modifier:</b>
+  <%= @project.modifier %>
+</p>
+
+
+<%= link_to 'Edit', edit_cms_project_path(@project) %> |
+<%= link_to 'Back', cms_projects_path %>

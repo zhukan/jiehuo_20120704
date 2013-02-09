@@ -1,0 +1,5 @@
+<ul class="an_checklist">
+  <% multiple_choice.each do |chioce| %>
+    <li class="an_own"><input id="multiple_<%=h chioce%>" type="checkbox" name="multiple[<%=h chioce%>]" class="an_checkbox" value="<%=h chioce%>"/><%=h chioce%></li>
+  <%end%>
+</ul>

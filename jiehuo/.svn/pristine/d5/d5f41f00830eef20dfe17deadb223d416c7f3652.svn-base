@@ -1,0 +1,1 @@
+<%=select("user_profile", "city_id",ajax_citys, { :include_blank => false }) %>

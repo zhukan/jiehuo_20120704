@@ -1,0 +1,8 @@
+var selector = "#a_user_"+<%= user_id%>;
+$(selector).attr("href","/follow/"+<%= user_id%>);
+$(selector).removeClass("qux");
+$(selector).addClass("jia");
+
+//var classmate_count = Number($('#classmate_count').text());
+//classmate_count = classmate_count-1;
+//$('#classmate_count').text(classmate_count);

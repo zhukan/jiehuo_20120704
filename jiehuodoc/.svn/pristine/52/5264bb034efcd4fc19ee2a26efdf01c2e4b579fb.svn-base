@@ -1,0 +1,62 @@
+<HTML><HEAD>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet">
+<link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet">
+<link href="未注册_未登录首页_files/axurerp_pagespecificstyles.css" type="text/css" rel="stylesheet">
+<!--[if IE 6]>
+<link href="未注册_未登录首页_files/axurerp_pagespecificstyles_ie6.css" type="text/css" rel="stylesheet">
+<![endif]-->
+<SCRIPT src="resources/scripts/jquery-1.4.2.min.js"></SCRIPT>
+<SCRIPT src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></SCRIPT>
+<SCRIPT src="resources/scripts/axurerp_beforepagescript.js"></SCRIPT>
+<SCRIPT src="resources/scripts/messagecenter.js"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="main_container">
+
+<DIV id=u0_container class="u0_container">
+<DIV id="u0_img" class="u0_original"></DIV>
+<DIV id=u1 class="u1" >
+<DIV id=u1_rtf><p style="text-align:center;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">题库</span></p></DIV></DIV>
+</DIV>
+<IMG id=u0 src="resources/images/transparent.gif" class="u0"    >
+
+<DIV id=u2 class="u2" >
+<DIV id=u2_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">邮箱：</span></p></DIV></DIV>
+<INPUT id=u3 type=text value="" class="u3"     >
+
+<DIV id=u4 class="u4" >
+<DIV id=u4_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">密码：</span></p></DIV></DIV>
+<INPUT id=u5 type=text value="" class="u5"     >
+
+<DIV id=u6_container class="u6_container">
+<DIV id="u6_img" class="u6_original"></DIV>
+<DIV id=u7 class="u7" >
+<DIV id=u7_rtf><p style="text-align:center;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">一句话表达网站的用途和宗旨</span></p></DIV></DIV>
+</DIV>
+<IMG id=u6 src="resources/images/transparent.gif" class="u6"    >
+
+<DIV id=u8container style="position:absolute; left:262px; top:324px; width:150px; height:19px; ; ; ;" >
+<LABEL for=u8>
+<DIV id=u9 class="u9" >
+<DIV id=u9_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">记住我的登录状态</span></p></DIV></DIV>
+</LABEL>
+<INPUT id=u8 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  >
+</DIV>
+<DIV id=u10 class="u10" >
+<DIV id=u10_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">忘记密码？</span></p></DIV></DIV>
+<DIV id=u11_container class="u11_container">
+<DIV id="u11_img" class="u11_original"></DIV>
+<DIV id=u12 class="u12" >
+<DIV id=u12_rtf><p style="text-align:center;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">申请注册</span></p></DIV></DIV>
+</DIV>
+<IMG id=u11 src="resources/images/transparent.gif" class="u11"    >
+</DIV>
+<DIV class=preload>
+<img src="未注册_未登录首页_files/u0_original.png" width="1" height="1"/>
+<img src="未注册_未登录首页_files/u6_original.png" width="1" height="1"/>
+<img src="未注册_未登录首页_files/u11_original.png" width="1" height="1"/></DIV>
+</BODY>
+<SCRIPT src="resources/scripts/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="未注册_未登录首页_files/axurerp_pagespecificscript.js" charset="utf-8"></SCRIPT>

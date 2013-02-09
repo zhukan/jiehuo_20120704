@@ -1,0 +1,6 @@
+var var_user_id = $("#hidden_user_id").val();
+var selector = "#classmate_"+var_user_id;
+var var_url = "/people/add_as_classmate/"+var_user_id;
+$(selector).attr("href",var_url);
+$(selector).html("<img border='0' src='/assets/btn18.jpg'>");
+

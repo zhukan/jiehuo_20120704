@@ -1,0 +1,9 @@
+<%if @state == "OK"%>
+  $("#last_answer").before('<%= j render(:partial =>'answers/an_answer',:object=>@one_answer) %>');
+  $("#answer_comment_textarea").attr("value","");
+  $(":checkbox").attr("checked",false);
+  $(":radio").attr("checked",false);
+  $("#answer_result_saq").attr("value","");
+<%else%>
+    alert("答案保存失败");
+<%end%>

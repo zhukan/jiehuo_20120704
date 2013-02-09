@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>解惑</title>
+  <%= stylesheet_link_tag "application"%>
+  <%= yield :styles %> <!--有些页面有单独的CSS样式时，可以用content_for :styles 标签引入特有的CSS-->
+  <!--SEO关键字以及网站内容说明-->
+  <meta name="keywords" content="#" />
+  <meta name="description" content="#" />
+  <!--在浏览器的地址栏添加ico图标-->
+  <link rel="shortcut icon" href="/favicon.ico?v=003"/>
+  <%= csrf_meta_tags %>
+  <!--去掉如下2个jquery包引入会导致所有表中的记录都无法删除的问题： http://chinacheng.iteye.com/blog/1441983-->
+  <%= javascript_include_tag "application" %>
+  <%= yield :scripts %> <!--有些页面有单独的JS时，可以用content_for :scripts 标签引入js-->
+  <!--TODO:加载公共的js库，并且按照不同的页面名称加载不同的JS-->
+</head>
+
+<body class="sign_bg">
+
+<div id="main">
+
+      <%= yield %>
+
+</div>
+
+
+</body>
+</html>
+

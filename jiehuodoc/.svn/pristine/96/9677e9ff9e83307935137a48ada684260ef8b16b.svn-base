@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册新用户</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="sign_bg">
+<div class="page">
+	<div class="reg_bg">
+		<div class="reg_left">
+			<div class="reg_logo"><img src="images/reg_logo.jpg" border="0" /></div>
+			<div class="reg_box">
+				<table width="500" border="0" cellspacing="9" cellpadding="0">
+				  <tr>
+					<th><span>*</span>我的邮箱</th>
+					<td><input type="text" class="reg_text" name="" value="" /></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>创建密码</th>
+					<td><input type="text" class="reg_text" name="" value="" /></td>
+					<td><div class="reg_h">请输入6-12位数字或英文</div></td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>重复密码</th>
+					<td><input type="text" class="reg_text" name="" value="" /></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>昵称</th>
+					<td><input type="text" class="reg_text" name="" value="" /></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>性别</th>
+					<td>
+						<ul class="nvtitle">
+							<li><input type="radio" name="radio" class="reg_radio" value="radio" />男</li>
+							<li><input type="radio" name="radio" class="reg_radio" value="radio" />女</li>
+						</ul>
+					</td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>学校</th>
+					<td><input type="text" class="reg_text" name="" value="" /><input type="button" class="reg_btn" name="" value=""  /></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>自我介绍</th>
+					<td><textarea class="reg_in" rows="5" cols="30"/></textarea></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>验证码</th>
+					<td>
+						<input type="text" class="reg_yzm" name="" value="" /><img src="images/yzm.jpg" border="0" align="left" />
+						<div class="reg_huan"><a href="#">换一换</a></div>
+					</td>
+					<td></td>
+				  </tr>
+				   <tr>
+					<th></th>
+					<td>
+						<ul class="reg_retitle">
+							<li><input type="button" class="reg_reg" name="" value=""  /></li>
+							<li><a href="#">《题库服务使用协议》</a></li>
+						</ul>
+					</td>
+					<td></td>
+				  </tr>
+				</table>
+
+			</div>
+		</div>
+		<div class="reg_right">
+			<h1>已有题库帐号？<br /><input type="button" class="btn08" name="" value=""  /></h1>
+			<ul class="rrtitle clearfix">
+				<li><a href="#">什么是题库？</a><br />在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库</li>
+				<li><a href="#">你能在题库做什么？</a><br />在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的库</li>
+				<li><a href="#">题库中有哪些题目？</a><br />在线的题目库在线的题目库在线的题目库在线的题目库</li>
+			</ul>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<%if(@last_ask_id)%>
+var pre_page_last_li = $("#li_ask<%=@current_ask_id%>");
+pre_page_last_li.after('<%=j render "ask_li",:asks=> @ajax_asks %>');
+//重写javascript方法，传递分页时的数据
+$("#id_more_asks").remove();
+var more_div = '<div class="listmore" id="id_more_asks"  onclick="more_ask(<%=@last_ask_id%>)" ><a  href="javascript:;"><img src="../assets/more.jpg" border="0"/></a></div>';
+$("#id_ul").after(more_div)
+<%end%>
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @user.user_id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+
+
+<p>
+  <b>头像:</b>
+  <%= image_tag(@user.avatar.thumb.url) if @user.avatar? %>
+</p>
+
+
+<p>
+  <b>Introduce:</b>
+  <%= @user.introduce %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_cms_user_path(@user) %> |
+<%= link_to 'Back', cms_users_path %>

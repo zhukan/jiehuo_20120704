@@ -1,0 +1,7 @@
+<form action="<%= url_for() %>" method="post" >
+
+  登录成功！
+
+</form>
+
+

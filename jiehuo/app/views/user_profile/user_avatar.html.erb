@@ -1,0 +1,76 @@
+<div class="page">
+  <%= form_for @user, :url => "/user_profile/upload_avatar", :method => "post", :html => {:id => "upload_avatar_form", :autocomplete => "off", :enctype => "multipart/form-data"} do |f| %>
+      <div class="mid clearfix">
+        <div class="b_list">
+          <ul class="b_listtitle">
+            <li><a href="/user_profile/basic"> 基本资料</a></li>
+            <li><a href="/user_profile/passwd">帐号密码</a></li>
+            <li class="frist"><a href="#">修改头像</a></li>
+          </ul>
+        </div>
+        <div class="b_main">
+          <h1>修改头像</h1>
+          <ul class="b_tx">
+            <li>
+              <%= f.file_field :avatar, :class => "b_text" %>
+              <div style="display: none;" ></div>
+              <% if notice %>
+                  <div class="error4">
+                    <%= notice %>
+                  </div>
+              <% end %>
+            </li>
+            <li><input type="button" class="b_reg2" name="" value="" onclick="btn_submit()"/>仅支持JPG,GIF,PNG图片文件，且文件小于5M
+            </li>
+            <li><h1>您上传的头像会自动生成四个尺寸，请注意中小尺寸的头像是否清晰</h1></li>
+            <li>
+              <div class="b_tx1">
+                <div class="tx_big"> <%= image_tag(@user.avatar_url(:super_large), :align => "left") %></div>
+                大尺寸头像，130X130像素
+
+              </div>
+              <div class="b_tx2">
+                <div class="tx_mid"><%= image_tag(@user.avatar_url(:large), :align => "left") %> </div>
+                中尺寸头像<br/>74X74像素
+              </div>
+              <div class="b_tx3">
+                <div class="tx_s"><%= image_tag(@user.avatar_url(:mid), :align => "left", :width => 50) %> </div>
+                小尺寸头像<br/>45X45像素
+              </div>
+              <div class="b_tx4">
+                <div class="tx_s2"><%= image_tag(@user.avatar_url(:min), :align => "left") %> </div>
+                最小尺寸头像<br/>30X30像素
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <% end %>
+
+</div>
+
+<script>
+    $(function () {
+        $("#upload_avatar_form").validate({
+            rules:{
+                "user[avatar]":{
+                    required:true}
+            },
+            messages:{
+                "user[avatar]":{required:"请选择图片"}
+            },
+            errorPlacement:function (error, element) {
+                var t = element;
+                element.removeClass("error");
+                t.next("div").html(error.html());
+                t.next("div").addClass("error4");
+                t.next("div").show();
+            }
+        })
+    })
+    function btn_submit() {
+        $('#upload_avatar_form').submit();
+    }
+
+
+</script>

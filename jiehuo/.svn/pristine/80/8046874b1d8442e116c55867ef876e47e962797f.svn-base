@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cityid: 1
+  city: MyString
+  fatherid: MyString
+
+two:
+  cityid: 2
+  city: MyString
+  fatherid: MyString

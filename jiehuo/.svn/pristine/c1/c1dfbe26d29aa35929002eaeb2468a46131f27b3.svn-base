@@ -1,0 +1,3 @@
+<%@set_asks.each do |ask|%>
+  $('#ul_set_asks').append("<%= j render :partial => "ask", :object => ask %>");
+<%end%>

@@ -1,0 +1,7 @@
+<%if @comments.empty?%>
+    $("#comments_answer_<%=h @answer_id.to_s%>").html('<%= j render(:partial =>'/comments/comments',:object => @comments) %>').hide().fadeIn();
+    var div_selector = "#div_comments_"+ <%=h @answer_id.to_s%>
+    $(div_selector).empty();
+<%else%>
+    $("#comments_answer_<%=h @answer_id.to_s%>").html('<%= j render(:partial =>'/comments/comments',:object => @comments) %>').hide().fadeIn();
+<%end%>

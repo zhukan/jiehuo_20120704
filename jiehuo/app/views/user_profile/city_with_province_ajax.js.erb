@@ -1,0 +1,10 @@
+
+var city_select_span = $('#city_select_span');
+city_html = ""
+<%if(@ajax_citys&&@ajax_citys.size>0)%>
+city_html ="<%=j render "select_city",:ajax_citys=> @ajax_citys %>"
+<%end%>
+city_select_span.html(city_html)
+
+
+

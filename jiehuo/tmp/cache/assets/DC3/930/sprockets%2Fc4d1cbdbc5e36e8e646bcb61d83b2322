@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1341375344.369021:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%cb63df60ffdf2f88cd8fcbccf1a9a5cfI"logical_path;
+FI"bg_bct.jpg;
+TI"pathname;
+FI"'$root/app/assets/images/bg_bct.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-07-04T12:04:58+08:00;
+FI"length;
+FI"697;
+FI"digest;
+F"%268741ad9861df0fe5b269c444ae8f89I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

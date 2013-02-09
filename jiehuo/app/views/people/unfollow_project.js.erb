@@ -1,0 +1,7 @@
+<% if @state.nil? %>
+alert("出错，搞个样式");
+<%else%>
+   var selector = "#a_follow_link_"+<%=params[:project_id]%>
+   $(selector).attr("class","user_btn02");
+   $(selector).attr("href","/people/follow_project/"+<%=params[:project_id]%>);
+<%end%>

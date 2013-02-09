@@ -1,0 +1,6 @@
+<% li_interest_hot_ask.each_pair do |k,v| %>
+<li>
+  <div class="name3"><a href="/people/<%=v.user_id%>"><%= v.user_name %></a><span>(<%= v.ask_count %>人解答了该题目)</span></div>
+  <div class="timu"><a href="/asks/<%=v.ask_id %>"> <%= h v.ask_body %>  </a></div>
+</li>
+<% end%>

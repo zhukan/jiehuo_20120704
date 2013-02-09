@@ -1,0 +1,167 @@
+<div class="mid2 clearfix">
+<div class="left">
+  <div class="an_rangebox">
+    <div class="an_range clearfix">
+      <h1><%=h @ask.project.name%>:</h1>
+      <ul class="an_rangelist">
+        <% @ask.sections.each do |section|%>
+            <li><%=h section.name%> </li>
+        <%end%>
+      </ul>
+    </div>
+  </div>
+  <ul class="an_title clearfix" >
+    <li class="first">
+      <div class="an_stem">
+        <h1>题干</h1>
+        <h2><%=jiehuo_simple_format h @ask.the_ask.body%>
+          <% unless @ask.the_ask.image_url.nil? %>
+              <br/>
+              <%= image_tag(@ask.the_ask.image_url(:ask_detail))%>
+          <% end %>
+          <% format_ask_body_item(@ask).each do |body_item|%>
+              <br/><%=jiehuo_simple_format h body_item %>
+          <%end%>
+        </h2>
+
+        <h1><span>答案</span></h1>
+        <div class="stem_an">
+           <h3 id="h3_see_result">查看出题者给出的答案 <a href="javascript:void(0);" id="a_see_result">点击这里</a></h3>
+        </div>
+
+        <div class="an_bc">
+          <div class="an_bcb">补充：</div>
+          <div class="an_bcn">
+            <%=jiehuo_simple_format h @ask.the_ask.comment%>
+          </div>
+        </div>
+        <div class="an_de">
+          <% if @ask.the_ask.user_id == current_user.id || current_user.email=="admin@sina.com"%>
+            <a data-remote="true" href="/ask/hide_ask/<%=@ask.the_ask.ask_id%>" id="hide_ask">删除考题</a>
+          <% end %>
+        </div>
+      </div>
+    </li>
+    <li class="mid">
+      <div class="an_stem">
+        <h2>
+          <span><%=h @ask.answers_count%>个答案</span>
+        </h2>
+      </div>
+    </li>
+    <% @ask.answers.each do |answer|%>
+        <%= render(:partial =>'answers/an_answer',:object => answer)  %>
+    <%end%>
+
+    <li class="last" id="last_answer">
+      <%= form_for @answer, :url=>'/answers/create',:remote => true,:html=>{:autocomplete => "off"} do |f| %>
+          <div class="an_ti clearfix">
+            <div class="an_answer">
+              <h2>我的答案</h2>
+                <%=h choose_answer_type_by_ask_type(@ask.the_ask.ask_type)%>
+              <div style="display: none;" id="div_daan_error" class="error5"></div>
+              <h2>解题思路</h2>
+              <div class="an_checklist">
+                <textarea id="answer_comment_textarea" class="own_jieti"  rows="10" cols="25" name="answer[comment]"></textarea>
+                <div style="display: none;" id="div_silu_error" class="error4"></div>
+                <%= f.submit "", :class=>"an_add_btn"%>
+              </div>
+            </div>
+            <div class="an_tou"><a title="<%= h current_user.name %>" href="/people/<%=current_user.id%>"><%= image_tag(current_user.avatar_url(:mid))%></a></div>
+            <input type="hidden" name="answer[ask_id]" value="<%=h @ask.the_ask.ask_id%>">
+          </div>
+      <%end%>
+    </li>
+  </ul>
+</div>
+
+<div class="right">
+  <%= render(:partial =>'/share/facebox',:object=>@person) unless @person.nil? %>
+  <%= render(:partial =>'/share/interest_ask',:object => @interest_ask,:locals => { :ask => @ask } ) %>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+  $(function(){
+     $('#a_see_result').click(function(){
+        $('#h3_see_result').html("<% format_ask_result(@ask).each do |result_item|%>"+
+                "<%=j jiehuo_simple_format h result_item %>"+
+                "<%end%>");
+     });
+
+      $("#new_answer").validate({
+          debug:true,
+          rules:{
+              "answer[result]":{
+                  required:true
+              },
+              "multiple[A]":{
+                  required:function (element) {
+                      return ($("#multiple_B").attr("checked")||$("#multiple_C").attr("checked")||$("#multiple_D").attr("checked")||$("#multiple_E").attr("checked")||$("#multiple_F").attr("checked"));
+                  }
+              },
+              "multiple[B]":{
+                  required:function (element) {
+                      return ($("#multiple_A").attr("checked")||$("#multiple_C").attr("checked")||$("#multiple_D").attr("checked")||$("#multiple_E").attr("checked")||$("#multiple_F").attr("checked"));
+                  }
+              },
+              "multiple[C]":{
+                  required:function (element) {
+                      return ($("#multiple_A").attr("checked")||$("#multiple_B").attr("checked")||$("#multiple_D").attr("checked")||$("#multiple_E").attr("checked")||$("#multiple_F").attr("checked"));
+                  }
+              },
+              "multiple[D]":{
+                  required:function (element) {
+                      return ($("#multiple_A").attr("checked")||$("#multiple_C").attr("checked")||$("#multiple_B").attr("checked")||$("#multiple_E").attr("checked")||$("#multiple_F").attr("checked"));
+                  }
+              },
+              "multiple[E]":{
+                  required:function (element) {
+                      return ($("#multiple_A").attr("checked")||$("#multiple_C").attr("checked")||$("#multiple_D").attr("checked")||$("#multiple_B").attr("checked")||$("#multiple_F").attr("checked"));
+                  }
+              },
+              "multiple[F]":{
+                  required:function (element) {
+                      return ($("#multiple_A").attr("checked")||$("#multiple_C").attr("checked")||$("#multiple_D").attr("checked")||$("#multiple_E").attr("checked")||$("#multiple_B").attr("checked"));
+                  }
+              },
+              "answer[comment]":{
+                  required:true,
+                  maxlength:1000
+              }
+          },
+          messages:{
+              "answer[result]":{required:"回答问题不能不给出答案是吧？",maxlength:"答案能输入500个中文字哦！"},
+              "answer[comment]":{required:"授人以渔，不亦乐乎，给个思路吧！",maxlength:"解题思路最多能输入1000个中文字哦！"},
+              "multiple[A]":{required:"回答问题不能不给出答案是吧？"},
+              "multiple[B]":{required:"回答问题不能不给出答案是吧？"},
+              "multiple[C]":{required:"回答问题不能不给出答案是吧？"},
+              "multiple[D]":{required:"回答问题不能不给出答案是吧？"},
+              "multiple[E]":{required:"回答问题不能不给出答案是吧？"},
+              "multiple[F]":{required:"回答问题不能不给出答案是吧？"}
+          },
+          errorPlacement:function(error,element)
+          {
+              if(element.attr("id")=="answer_comment_textarea"){
+                  var t = element.next();
+                  element.removeClass("error");
+                  t.html(error.html());
+                  t.addClass("error");
+                  t.show();
+              }
+              else{
+                  t = element.parent().parent();
+                  $(".an_checkbox").removeClass("error");
+                  $("#answer_result_saq").removeClass("error");
+                  t.next("div").html(error.html());
+                  t.next("div").addClass("error");
+                  t.next("div").show();
+              }
+          },
+          success: "valid"
+
+      });
+  });
+</script>

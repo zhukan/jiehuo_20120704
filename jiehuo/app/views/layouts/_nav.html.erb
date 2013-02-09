@@ -1,0 +1,13 @@
+<ul class="navtitle">
+  <%case %>
+  <%when nav == "/asks/new" then%>
+    <li id="ktgc_id"><a href="/home">最新问题</a></li>
+    <li id="tjkt_id">我要提问</li>
+  <%when (nav == "/home")||(nav == "/asks")||(nav == "/")||(nav == "/home/index")%>
+    <li id="ktgc_id" >最新问题</li>
+    <li id="tjkt_id" ><a href="/asks/new">我要提问</a></li>
+  <%else %>
+      <li id="ktgc_id"><a href="/home">最新问题</a></li>
+      <li id="tjkt_id" ><a href="/asks/new">我要提问</a></li>
+  <%end%>
+</ul>

@@ -1,0 +1,6 @@
+<h1>TA关注的同学</h1>
+<ul class="user_fans clearfix">
+  <% followings.each do |follower| %>
+      <li><a title="<%= h follower.name %>" href="/people/<%=follower.user_id%>"><%= image_tag(follower.avatar_url(:min),:border=>"0")%></a></li>
+  <% end %>
+</ul>

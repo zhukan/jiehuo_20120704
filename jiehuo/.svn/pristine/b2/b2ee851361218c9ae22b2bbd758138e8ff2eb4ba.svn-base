@@ -1,0 +1,43 @@
+<li>
+  <div class="an_stem">
+    <div class="an_answer">
+      <div class="an_user"><a href="<%=h person_path(an_answer.owner.user_id)%>"><%=h an_answer.owner.name %>: </a><%=h truncate(an_answer.owner.introduce,:length => 30) %></div>
+      <h1>答案</h1>
+      <ul class="an_checklist">
+        <li><%=jiehuo_simple_format h an_answer.the_answer.result%></li>
+      </ul>
+    </div>
+    <div class="an_tou"><a href="javascript:void(0);" title="<%= h an_answer.owner.name %>"><%= image_tag(an_answer.owner.avatar_url(:mid))%></a></div>
+    <div class="an_bc0">
+      <h1>思路</h1>
+      <h2><%=jiehuo_simple_format h an_answer.the_answer.comment%></h2>
+    </div>
+    <div class="an_com">
+      <%=h an_answer.the_answer.created_at.strftime("%F %T")%>
+      <a onclick="get_comments(this)" href="javascript:void(0);" id="a_comments_<%=h an_answer.the_answer.answer_id.to_s%>">
+        <%=h an_answer.comments_count%>条评论
+      </a>
+    </div>
+
+    <div id="comments_answer_<%=h an_answer.the_answer.answer_id%>" class="an_quebox clearfix">
+    </div>
+  </div>
+</li>
+
+<script type="text/javascript">
+
+    function get_comments(val){
+        var answer_id = val.id.substr(11);
+        var div_selector = "#comments_answer_"+answer_id;
+        //判断如果comments_answer_X层下存在其他层，清空存在的层
+        if($(div_selector+":has(div)").length>0){
+            $(div_selector).empty();
+        }else{
+            //判断如果comments_answer_X层下不存在其他层，则提交AJAX请求
+            $.ajax({
+                type:"get",
+                url:"/an_answer_comments/"+answer_id
+            });
+        }
+    }
+</script>

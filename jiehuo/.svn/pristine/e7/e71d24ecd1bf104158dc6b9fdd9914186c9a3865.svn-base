@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  provinceid: 1
+  province: MyString
+
+two:
+  provinceid: 2
+  province: MyString

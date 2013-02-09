@@ -1,0 +1,65 @@
+<div id="school_dialog" class="school">
+  <div class="school_box">
+    <h1>选择学校<input type="button" class="school_btn" name="" onclick="close_school_dia()" value=""/></h1>
+    <ul class="schooltitle">
+      <li>学校所在地：
+        <%= select(:province, :select, @provinces, :class => "s_sel") %>
+      </li>
+      <li class="s_school">
+        <dl class="s_sn">
+          <div id="high_schools_id">
+            <%= render "/share/show_province_school", :schools => @schools %>
+          </div>
+        </dl>
+
+      </li>
+      <li class="s_none">没有找到你的学校？<a href="#">申请添加</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+    /**
+     * 学校选择
+     */
+    $(function () {
+        $("#school_dialog").dialog({
+            autoOpen:false,
+            show:"blind",
+            hide:"explode"
+        });
+        $("#school_select_btn").click(function () {
+            $("#school_dialog").dialog("open");
+            $("#province_select").get(0).options[0].selected = true;
+            $("#province_select").trigger("change");
+            //处理关闭按钮
+            $("#ui-dialog-title-school_dialog").next().remove();
+            $("#ui-dialog-title-school_dialog").after();
+
+             return false;
+        });
+    });
+
+    /**
+     根据省份查询学校
+     */
+    $(function () {
+
+        $("#province_select").change(function () {
+            $.ajax({
+                type:"POST",
+                url:"/user_sessions/school_ajax",
+                data:"provinceid=" + this.value
+            });
+            return true;
+        });
+    })
+
+        function close_school_dia(){
+            $("#school_dialog").dialog('close');
+        }
+
+
+
+
+</script>
+

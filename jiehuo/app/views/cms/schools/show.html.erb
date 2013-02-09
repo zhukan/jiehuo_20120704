@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>School:</b>
+  <%= @school.school_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @school.name %>
+</p>
+
+
+<p>
+  <b>Creator:</b>
+  <%= @school.creator %>
+</p>
+
+<p>
+  <b>Modifier:</b>
+  <%= @school.modifier %>
+</p>
+
+
+<%= link_to 'Edit', edit_cms_school_path(@school) %> |
+<%= link_to 'Back', cms_schools_path %>

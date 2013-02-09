@@ -1,0 +1,3376 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_original {
+    background-image: url('../全局导航_files/u77_original.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:1px;
+    top:5px;
+    width:180px;
+    height:43px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:49px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:1px;
+    top:5px;
+    width:180px;
+    height:43px
+}
+
+.u2 {
+    position:absolute;
+    left:28px;
+    top:8px;
+    width:113px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3 {
+    position:absolute;
+    left:556px;
+    top:26px;
+    width:60px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_original {
+    background-image: url('../全局导航_files/u81_original.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:79px;
+    top:45px;
+    width:15px;
+    height:5px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:21px;
+    height:11px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:-6px;
+    width:11px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:79px;
+    top:45px;
+    width:15px;
+    height:5px
+}
+
+.u6_original {
+    background-image: url('../全局导航_files/u83_original.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:751px;
+    top:5px;
+    width:210px;
+    height:43px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:216px;
+    height:49px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:206px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:751px;
+    top:5px;
+    width:210px;
+    height:43px
+}
+
+.u8 {
+    position:absolute;
+    left:807px;
+    top:-5px;
+    width:108px;
+    height:65px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_line {
+    background-image: url('../全局导航_files/u86_line.png');
+}
+
+.u9_line {
+    position:absolute;
+    left:1px;
+    top:48px;
+    width:960px;
+    height:5px;
+}
+
+.u9 {
+    position:absolute;
+    left:1px;
+    top:48px;
+    width:960px;
+    height:5px
+}
+
+.u10 {
+    position:absolute;
+    left:681px;
+    top:28px;
+    width:30px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:624px;
+    top:28px;
+    width:50px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:221px;
+    top:9px;
+    width:120px;
+    height:36px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_original {
+    background-image: url('../相关考题_files/u14_original.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:750px;
+    top:240px;
+    width:210px;
+    height:390px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:216px;
+    height:396px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:187px;
+    width:206px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:750px;
+    top:240px;
+    width:210px;
+    height:390px
+}
+
+.u16_original {
+    background-image: url('../相关考题_files/u16_original.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:750px;
+    top:210px;
+    width:210px;
+    height:30px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:216px;
+    height:36px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:206px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:750px;
+    top:210px;
+    width:210px;
+    height:30px
+}
+
+.u18_line {
+    background-image: url('../相关考题_files/u18_line.png');
+}
+
+.u18_line {
+    position:absolute;
+    left:761px;
+    top:305px;
+    width:190px;
+    height:3px;
+}
+
+.u18 {
+    position:absolute;
+    left:761px;
+    top:305px;
+    width:190px;
+    height:3px
+}
+
+.u19 {
+    position:absolute;
+    left:910px;
+    top:607px;
+    width:50px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:761px;
+    top:245px;
+    width:190px;
+    height:34px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:842px;
+    top:281px;
+    width:120px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_line {
+    background-image: url('../相关考题_files/u22_line.png');
+}
+
+.u22_line {
+    position:absolute;
+    left:761px;
+    top:378px;
+    width:190px;
+    height:3px;
+}
+
+.u22 {
+    position:absolute;
+    left:761px;
+    top:378px;
+    width:190px;
+    height:3px
+}
+
+.u23 {
+    position:absolute;
+    left:761px;
+    top:318px;
+    width:190px;
+    height:34px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:842px;
+    top:354px;
+    width:120px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_line {
+    background-image: url('../相关考题_files/u25_line.png');
+}
+
+.u25_line {
+    position:absolute;
+    left:761px;
+    top:452px;
+    width:190px;
+    height:3px;
+}
+
+.u25 {
+    position:absolute;
+    left:761px;
+    top:452px;
+    width:190px;
+    height:3px
+}
+
+.u26 {
+    position:absolute;
+    left:761px;
+    top:392px;
+    width:190px;
+    height:34px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:842px;
+    top:428px;
+    width:120px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_line {
+    background-image: url('../相关考题_files/u28_line.png');
+}
+
+.u28_line {
+    position:absolute;
+    left:761px;
+    top:525px;
+    width:190px;
+    height:3px;
+}
+
+.u28 {
+    position:absolute;
+    left:761px;
+    top:525px;
+    width:190px;
+    height:3px
+}
+
+.u29 {
+    position:absolute;
+    left:761px;
+    top:465px;
+    width:190px;
+    height:34px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30 {
+    position:absolute;
+    left:842px;
+    top:501px;
+    width:120px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_line {
+    background-image: url('../相关考题_files/u31_line.png');
+}
+
+.u31_line {
+    position:absolute;
+    left:761px;
+    top:598px;
+    width:190px;
+    height:3px;
+}
+
+.u31 {
+    position:absolute;
+    left:761px;
+    top:598px;
+    width:190px;
+    height:3px
+}
+
+.u32 {
+    position:absolute;
+    left:761px;
+    top:538px;
+    width:190px;
+    height:34px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:842px;
+    top:574px;
+    width:120px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_original {
+    background-image: url('../个人信息_files/u0_original.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:750px;
+    top:60px;
+    width:211px;
+    height:140px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:217px;
+    height:146px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:62px;
+    width:207px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35 {
+    position:absolute;
+    left:750px;
+    top:60px;
+    width:211px;
+    height:140px
+}
+
+.u37 {
+    position:absolute;
+    left:828px;
+    top:74px;
+    width:39px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_original {
+    background-image: url('../个人信息_files/u3_original.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:758px;
+    top:68px;
+    width:63px;
+    height:65px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:71px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38 {
+    position:absolute;
+    left:758px;
+    top:68px;
+    width:63px;
+    height:65px
+}
+
+.u40_container {
+    position:absolute;
+    left:761px;
+    top:71px;
+    width:58px;
+    height:60px;
+}
+
+#u40_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:58px;
+    height:60px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:22px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:761px;
+    top:71px;
+    width:58px;
+    height:60px
+}
+
+.u42 {
+    position:absolute;
+    left:760px;
+    top:173px;
+    width:33px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:816px;
+    top:173px;
+    width:26px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44 {
+    position:absolute;
+    left:870px;
+    top:173px;
+    width:25px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:921px;
+    top:173px;
+    width:32px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46 {
+    position:absolute;
+    left:762px;
+    top:149px;
+    width:22px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47 {
+    position:absolute;
+    left:812px;
+    top:149px;
+    width:38px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48 {
+    position:absolute;
+    left:917px;
+    top:149px;
+    width:42px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49 {
+    position:absolute;
+    left:869px;
+    top:149px;
+    width:25px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50 {
+    position:absolute;
+    left:828px;
+    top:106px;
+    width:113px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_line {
+    background-image: url('../个人信息_files/u16_line.png');
+}
+
+.u51_line {
+    position:absolute;
+    left:756px;
+    top:140px;
+    width:200px;
+    height:3px;
+}
+
+.u51 {
+    position:absolute;
+    left:756px;
+    top:140px;
+    width:200px;
+    height:3px
+}
+
+.u52_line {
+    background-image: url('../个人信息_files/u17_line.png');
+}
+
+.u52_line {
+    position:absolute;
+    left:798px;
+    top:149px;
+    width:3px;
+    height:40px;
+}
+
+.u52 {
+    position:absolute;
+    left:798px;
+    top:149px;
+    width:3px;
+    height:40px
+}
+
+.u53_line {
+    background-image: url('../个人信息_files/u18_line.png');
+}
+
+.u53_line {
+    position:absolute;
+    left:856px;
+    top:149px;
+    width:3px;
+    height:40px;
+}
+
+.u53 {
+    position:absolute;
+    left:856px;
+    top:149px;
+    width:3px;
+    height:40px
+}
+
+.u54_line {
+    background-image: url('../个人信息_files/u19_line.png');
+}
+
+.u54_line {
+    position:absolute;
+    left:907px;
+    top:149px;
+    width:3px;
+    height:40px;
+}
+
+.u54 {
+    position:absolute;
+    left:907px;
+    top:149px;
+    width:3px;
+    height:40px
+}
+
+.u56 {
+    position:absolute;
+    left:11px;
+    top:68px;
+    width:120px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_original {
+    background-image: url('../独立考题母板_files/u57_original.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:111px;
+    top:68px;
+    width:80px;
+    height:20px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57 {
+    position:absolute;
+    left:111px;
+    top:68px;
+    width:80px;
+    height:20px
+}
+
+.u59_original {
+    background-image: url('../独立考题母板_files/u57_original.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:211px;
+    top:68px;
+    width:80px;
+    height:20px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59 {
+    position:absolute;
+    left:211px;
+    top:68px;
+    width:80px;
+    height:20px
+}
+
+.u61_original {
+    background-image: url('../独立考题母板_files/u57_original.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:311px;
+    top:68px;
+    width:80px;
+    height:20px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61 {
+    position:absolute;
+    left:311px;
+    top:68px;
+    width:80px;
+    height:20px
+}
+
+.u63_original {
+    background-image: url('../独立考题母板_files/u57_original.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:411px;
+    top:68px;
+    width:80px;
+    height:20px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:411px;
+    top:68px;
+    width:80px;
+    height:20px
+}
+
+.u65 {
+    position:absolute;
+    left:10px;
+    top:98px;
+    width:51px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u66 {
+    position:absolute;
+    left:61px;
+    top:98px;
+    width:669px;
+    height:120px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67 {
+    position:absolute;
+    left:10px;
+    top:262px;
+    width:52px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u68 {
+    position:absolute;
+    left:61px;
+    top:262px;
+    width:659px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_original {
+    background-image: url('../独立考题母板_files/u69_original.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:61px;
+    top:228px;
+    width:180px;
+    height:20px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:26px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:176px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69 {
+    position:absolute;
+    left:61px;
+    top:228px;
+    width:180px;
+    height:20px
+}
+
+.u71_line {
+    background-image: url('../独立考题母板_files/u71_line.png');
+}
+
+.u71_line {
+    position:absolute;
+    left:0px;
+    top:332px;
+    width:730px;
+    height:3px;
+}
+
+.u71 {
+    position:absolute;
+    left:0px;
+    top:332px;
+    width:730px;
+    height:3px
+}
+
+.u72_line {
+    background-image: url('../独立考题母板_files/u72_line.png');
+}
+
+.u72_line {
+    position:absolute;
+    left:0px;
+    top:327px;
+    width:730px;
+    height:5px;
+}
+
+.u72 {
+    position:absolute;
+    left:0px;
+    top:327px;
+    width:730px;
+    height:5px
+}
+
+.u73_line {
+    background-image: url('../独立考题母板_files/u73_line.png');
+}
+
+.u73_line {
+    position:absolute;
+    left:3px;
+    top:253px;
+    width:727px;
+    height:3px;
+}
+
+.u73 {
+    position:absolute;
+    left:3px;
+    top:253px;
+    width:727px;
+    height:3px
+}
+
+.u74_line {
+    background-image: url('../独立考题母板_files/u74_line.png');
+}
+
+.u74_line {
+    position:absolute;
+    left:49px;
+    top:102px;
+    width:3px;
+    height:13px;
+}
+
+.u74 {
+    position:absolute;
+    left:49px;
+    top:102px;
+    width:3px;
+    height:13px
+}
+
+.u75_line {
+    background-image: url('../独立考题母板_files/u75_line.png');
+}
+
+.u75_line {
+    position:absolute;
+    left:49px;
+    top:266px;
+    width:3px;
+    height:13px;
+}
+
+.u75 {
+    position:absolute;
+    left:49px;
+    top:266px;
+    width:3px;
+    height:13px
+}
+
+.u76 {
+    position:absolute;
+    left:9px;
+    top:228px;
+    width:51px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_line {
+    background-image: url('../独立考题母板_files/u77_line.png');
+}
+
+.u77_line {
+    position:absolute;
+    left:49px;
+    top:232px;
+    width:3px;
+    height:13px;
+}
+
+.u77 {
+    position:absolute;
+    left:49px;
+    top:232px;
+    width:3px;
+    height:13px
+}
+
+.u78_line {
+    background-image: url('../独立考题母板_files/u78_line.png');
+}
+
+.u78_line {
+    position:absolute;
+    left:3px;
+    top:91px;
+    width:727px;
+    height:3px;
+}
+
+.u78 {
+    position:absolute;
+    left:3px;
+    top:91px;
+    width:727px;
+    height:3px
+}
+
+.u80 {
+    position:absolute;
+    left:9px;
+    top:350px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81 {
+    position:absolute;
+    left:49px;
+    top:350px;
+    width:280px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82_container {
+    position:absolute;
+    left:689px;
+    top:340px;
+    width:39px;
+    height:40px;
+}
+
+#u82_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u83 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82 {
+    position:absolute;
+    left:689px;
+    top:340px;
+    width:39px;
+    height:40px
+}
+
+.u84 {
+    position:absolute;
+    left:9px;
+    top:409px;
+    width:70px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85 {
+    position:absolute;
+    left:89px;
+    top:413px;
+    width:630px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_line {
+    background-image: url('../独立答题_files/u86_line.png');
+}
+
+.u86_line {
+    position:absolute;
+    left:2px;
+    top:404px;
+    width:727px;
+    height:3px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:404px;
+    width:727px;
+    height:3px
+}
+
+.u87_line {
+    background-image: url('../独立答题_files/u87_line.png');
+}
+
+.u87_line {
+    position:absolute;
+    left:79px;
+    top:417px;
+    width:3px;
+    height:13px;
+}
+
+.u87 {
+    position:absolute;
+    left:79px;
+    top:417px;
+    width:3px;
+    height:13px
+}
+
+.u88 {
+    position:absolute;
+    left:28px;
+    top:379px;
+    width:51px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_line {
+    background-image: url('../独立答题_files/u89_line.png');
+}
+
+.u89_line {
+    position:absolute;
+    left:79px;
+    top:383px;
+    width:3px;
+    height:13px;
+}
+
+.u89 {
+    position:absolute;
+    left:79px;
+    top:383px;
+    width:3px;
+    height:13px
+}
+
+.u90 {
+    position:absolute;
+    left:90px;
+    top:378px;
+    width:80px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u91 {
+    position:absolute;
+    left:7px;
+    top:475px;
+    width:80px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_original {
+    background-image: url('../独立答题_files/u92_original.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:82px;
+    top:482px;
+    width:4px;
+    height:4px;
+}
+
+#u92_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:10px;
+    height:10px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:-6px;
+    width:0px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92 {
+    position:absolute;
+    left:82px;
+    top:482px;
+    width:4px;
+    height:4px
+}
+
+.u94 {
+    position:absolute;
+    left:106px;
+    top:475px;
+    width:126px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_original {
+    background-image: url('../独立答题_files/u95_original.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:91px;
+    top:471px;
+    width:17px;
+    height:25px;
+}
+
+#u95_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:17px;
+    height:25px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:13px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95 {
+    position:absolute;
+    left:91px;
+    top:471px;
+    width:17px;
+    height:25px
+}
+
+.u97_line {
+    background-image: url('../独立答题_files/u97_line.png');
+}
+
+.u97_line {
+    position:absolute;
+    left:2px;
+    top:471px;
+    width:727px;
+    height:3px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:471px;
+    width:727px;
+    height:3px
+}
+
+.u98_line {
+    background-image: url('../独立答题_files/u98_line.png');
+}
+
+.u98_line {
+    position:absolute;
+    left:0px;
+    top:494px;
+    width:730px;
+    height:3px;
+}
+
+.u98 {
+    position:absolute;
+    left:0px;
+    top:494px;
+    width:730px;
+    height:3px
+}
+
+.u100 {
+    position:absolute;
+    left:6px;
+    top:511px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101 {
+    position:absolute;
+    left:46px;
+    top:511px;
+    width:280px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102_container {
+    position:absolute;
+    left:686px;
+    top:501px;
+    width:39px;
+    height:40px;
+}
+
+#u102_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:686px;
+    top:501px;
+    width:39px;
+    height:40px
+}
+
+.u104 {
+    position:absolute;
+    left:6px;
+    top:570px;
+    width:70px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105 {
+    position:absolute;
+    left:86px;
+    top:574px;
+    width:630px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_line {
+    background-image: url('../独立答题讨论页_files/u106_line.png');
+}
+
+.u106_line {
+    position:absolute;
+    left:-1px;
+    top:565px;
+    width:727px;
+    height:3px;
+}
+
+.u106 {
+    position:absolute;
+    left:-1px;
+    top:565px;
+    width:727px;
+    height:3px
+}
+
+.u107_line {
+    background-image: url('../独立答题讨论页_files/u107_line.png');
+}
+
+.u107_line {
+    position:absolute;
+    left:76px;
+    top:578px;
+    width:3px;
+    height:13px;
+}
+
+.u107 {
+    position:absolute;
+    left:76px;
+    top:578px;
+    width:3px;
+    height:13px
+}
+
+.u108 {
+    position:absolute;
+    left:25px;
+    top:540px;
+    width:51px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109_line {
+    background-image: url('../独立答题讨论页_files/u109_line.png');
+}
+
+.u109_line {
+    position:absolute;
+    left:76px;
+    top:544px;
+    width:3px;
+    height:13px;
+}
+
+.u109 {
+    position:absolute;
+    left:76px;
+    top:544px;
+    width:3px;
+    height:13px
+}
+
+.u110 {
+    position:absolute;
+    left:87px;
+    top:539px;
+    width:80px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u111 {
+    position:absolute;
+    left:4px;
+    top:636px;
+    width:80px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112_original {
+    background-image: url('../独立答题讨论页_files/u112_original.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:79px;
+    top:643px;
+    width:4px;
+    height:4px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:10px;
+    height:10px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:-6px;
+    width:0px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:79px;
+    top:643px;
+    width:4px;
+    height:4px
+}
+
+.u114 {
+    position:absolute;
+    left:103px;
+    top:636px;
+    width:126px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115_original {
+    background-image: url('../独立答题讨论页_files/u115_original.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:88px;
+    top:632px;
+    width:17px;
+    height:25px;
+}
+
+#u115_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:17px;
+    height:25px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:13px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115 {
+    position:absolute;
+    left:88px;
+    top:632px;
+    width:17px;
+    height:25px
+}
+
+.u117_line {
+    background-image: url('../独立答题讨论页_files/u117_line.png');
+}
+
+.u117_line {
+    position:absolute;
+    left:-1px;
+    top:632px;
+    width:727px;
+    height:3px;
+}
+
+.u117 {
+    position:absolute;
+    left:-1px;
+    top:632px;
+    width:727px;
+    height:3px
+}
+
+.u118_original {
+    background-image: url('../独立答题讨论页_files/u118_original.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:118px;
+    top:651px;
+    width:24px;
+    height:16px;
+}
+
+#u118_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:30px;
+    height:22px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:20px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:118px;
+    top:651px;
+    width:24px;
+    height:16px
+}
+
+.u120_original {
+    background-image: url('../独立答题讨论页_files/u120_original.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:4px;
+    top:667px;
+    width:710px;
+    height:381px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:716px;
+    height:387px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:182px;
+    width:706px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120 {
+    position:absolute;
+    left:4px;
+    top:667px;
+    width:710px;
+    height:381px
+}
+
+.u122_original {
+    background-image: url('../独立答题讨论页_files/u122_original.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:19px;
+    top:676px;
+    width:680px;
+    height:257px;
+}
+
+#u122_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:686px;
+    height:263px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:120px;
+    width:676px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122 {
+    position:absolute;
+    left:19px;
+    top:676px;
+    width:680px;
+    height:257px
+}
+
+.u124 {
+    position:absolute;
+    left:74px;
+    top:678px;
+    width:75px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125 {
+    position:absolute;
+    left:85px;
+    top:698px;
+    width:580px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_container {
+    position:absolute;
+    left:30px;
+    top:775px;
+    width:39px;
+    height:40px;
+}
+
+#u126_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126 {
+    position:absolute;
+    left:30px;
+    top:775px;
+    width:39px;
+    height:40px
+}
+
+.u128_line {
+    background-image: url('../独立答题讨论页_files/u128_line.png');
+}
+
+.u128_line {
+    position:absolute;
+    left:29px;
+    top:766px;
+    width:662px;
+    height:3px;
+}
+
+.u128 {
+    position:absolute;
+    left:29px;
+    top:766px;
+    width:662px;
+    height:3px
+}
+
+.u129_container {
+    position:absolute;
+    left:28px;
+    top:682px;
+    width:39px;
+    height:40px;
+}
+
+#u129_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u130 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:28px;
+    top:682px;
+    width:39px;
+    height:40px
+}
+
+.u131 {
+    position:absolute;
+    left:559px;
+    top:748px;
+    width:80px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132_original {
+    background-image: url('../独立答题讨论页_files/u112_original.png');
+}
+
+.u132_container {
+    position:absolute;
+    left:633px;
+    top:755px;
+    width:4px;
+    height:4px;
+}
+
+#u132_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:10px;
+    height:10px;
+}
+
+.u133 {
+    position:absolute;
+    left:2px;
+    top:-6px;
+    width:0px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132 {
+    position:absolute;
+    left:633px;
+    top:755px;
+    width:4px;
+    height:4px
+}
+
+.u134 {
+    position:absolute;
+    left:644px;
+    top:748px;
+    width:31px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135 {
+    position:absolute;
+    left:74px;
+    top:775px;
+    width:75px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136 {
+    position:absolute;
+    left:89px;
+    top:794px;
+    width:580px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137_original {
+    background-image: url('../独立答题讨论页_files/u137_original.png');
+}
+
+.u137_container {
+    position:absolute;
+    left:6px;
+    top:1098px;
+    width:710px;
+    height:62px;
+}
+
+#u137_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:716px;
+    height:68px;
+}
+
+.u138 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:706px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:6px;
+    top:1098px;
+    width:710px;
+    height:62px
+}
+
+.u139_original {
+    background-image: url('../独立答题讨论页_files/u139_original.png');
+}
+
+.u139_container {
+    position:absolute;
+    left:6px;
+    top:1069px;
+    width:710px;
+    height:30px;
+}
+
+#u139_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:716px;
+    height:36px;
+}
+
+.u140 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:706px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139 {
+    position:absolute;
+    left:6px;
+    top:1069px;
+    width:710px;
+    height:30px
+}
+
+.u141 {
+    position:absolute;
+    left:22px;
+    top:1074px;
+    width:40px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142_original {
+    background-image: url('../独立答题讨论页_files/u142_original.png');
+}
+
+.u142_container {
+    position:absolute;
+    left:626px;
+    top:1170px;
+    width:90px;
+    height:30px;
+}
+
+#u142_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:36px;
+}
+
+.u143 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:86px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142 {
+    position:absolute;
+    left:626px;
+    top:1170px;
+    width:90px;
+    height:30px
+}
+
+.u144 {
+    position:absolute;
+    left:16px;
+    top:1103px;
+    width:693px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145_original {
+    background-image: url('../独立答题讨论页_files/u145_original.png');
+}
+
+.u145_container {
+    position:absolute;
+    left:19px;
+    top:948px;
+    width:680px;
+    height:89px;
+}
+
+#u145_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:686px;
+    height:95px;
+}
+
+.u146 {
+    position:absolute;
+    left:2px;
+    top:36px;
+    width:676px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145 {
+    position:absolute;
+    left:19px;
+    top:948px;
+    width:680px;
+    height:89px
+}
+
+.u147_container {
+    position:absolute;
+    left:29px;
+    top:953px;
+    width:39px;
+    height:40px;
+}
+
+#u147_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u148 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147 {
+    position:absolute;
+    left:29px;
+    top:953px;
+    width:39px;
+    height:40px
+}
+
+.u149 {
+    position:absolute;
+    left:74px;
+    top:949px;
+    width:200px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150 {
+    position:absolute;
+    left:89px;
+    top:971px;
+    width:580px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151_line {
+    background-image: url('../独立答题讨论页_files/u151_line.png');
+}
+
+.u151_line {
+    position:absolute;
+    left:29px;
+    top:853px;
+    width:662px;
+    height:3px;
+}
+
+.u151 {
+    position:absolute;
+    left:29px;
+    top:853px;
+    width:662px;
+    height:3px
+}
+
+.u152_container {
+    position:absolute;
+    left:31px;
+    top:857px;
+    width:39px;
+    height:40px;
+}
+
+#u152_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152 {
+    position:absolute;
+    left:31px;
+    top:857px;
+    width:39px;
+    height:40px
+}
+
+.u154 {
+    position:absolute;
+    left:75px;
+    top:857px;
+    width:75px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u155 {
+    position:absolute;
+    left:90px;
+    top:875px;
+    width:580px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156_line {
+    background-image: url('../独立答题讨论页_files/u156_line.png');
+}
+
+.u156_line {
+    position:absolute;
+    left:-9px;
+    top:1207px;
+    width:738px;
+    height:3px;
+}
+
+.u156 {
+    position:absolute;
+    left:-9px;
+    top:1207px;
+    width:738px;
+    height:3px
+}
+
+.u158 {
+    position:absolute;
+    left:10px;
+    top:1225px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159 {
+    position:absolute;
+    left:50px;
+    top:1225px;
+    width:280px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160_container {
+    position:absolute;
+    left:690px;
+    top:1215px;
+    width:39px;
+    height:40px;
+}
+
+#u160_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u161 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160 {
+    position:absolute;
+    left:690px;
+    top:1215px;
+    width:39px;
+    height:40px
+}
+
+.u162 {
+    position:absolute;
+    left:10px;
+    top:1284px;
+    width:70px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163 {
+    position:absolute;
+    left:90px;
+    top:1288px;
+    width:630px;
+    height:51px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u164_line {
+    background-image: url('../独立答题_files/u86_line.png');
+}
+
+.u164_line {
+    position:absolute;
+    left:3px;
+    top:1279px;
+    width:727px;
+    height:3px;
+}
+
+.u164 {
+    position:absolute;
+    left:3px;
+    top:1279px;
+    width:727px;
+    height:3px
+}
+
+.u165_line {
+    background-image: url('../独立答题_files/u87_line.png');
+}
+
+.u165_line {
+    position:absolute;
+    left:80px;
+    top:1292px;
+    width:3px;
+    height:13px;
+}
+
+.u165 {
+    position:absolute;
+    left:80px;
+    top:1292px;
+    width:3px;
+    height:13px
+}
+
+.u166 {
+    position:absolute;
+    left:29px;
+    top:1254px;
+    width:51px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_line {
+    background-image: url('../独立答题_files/u89_line.png');
+}
+
+.u167_line {
+    position:absolute;
+    left:80px;
+    top:1258px;
+    width:3px;
+    height:13px;
+}
+
+.u167 {
+    position:absolute;
+    left:80px;
+    top:1258px;
+    width:3px;
+    height:13px
+}
+
+.u168 {
+    position:absolute;
+    left:91px;
+    top:1253px;
+    width:80px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u169 {
+    position:absolute;
+    left:8px;
+    top:1350px;
+    width:80px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u170_original {
+    background-image: url('../独立答题_files/u92_original.png');
+}
+
+.u170_container {
+    position:absolute;
+    left:83px;
+    top:1357px;
+    width:4px;
+    height:4px;
+}
+
+#u170_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:10px;
+    height:10px;
+}
+
+.u171 {
+    position:absolute;
+    left:2px;
+    top:-6px;
+    width:0px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u170 {
+    position:absolute;
+    left:83px;
+    top:1357px;
+    width:4px;
+    height:4px
+}
+
+.u172 {
+    position:absolute;
+    left:107px;
+    top:1350px;
+    width:126px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173_original {
+    background-image: url('../独立答题_files/u95_original.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:92px;
+    top:1346px;
+    width:17px;
+    height:25px;
+}
+
+#u173_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:17px;
+    height:25px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:13px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173 {
+    position:absolute;
+    left:92px;
+    top:1346px;
+    width:17px;
+    height:25px
+}
+
+.u175_line {
+    background-image: url('../独立答题_files/u97_line.png');
+}
+
+.u175_line {
+    position:absolute;
+    left:3px;
+    top:1346px;
+    width:727px;
+    height:3px;
+}
+
+.u175 {
+    position:absolute;
+    left:3px;
+    top:1346px;
+    width:727px;
+    height:3px
+}
+
+.u176_line {
+    background-image: url('../独立答题_files/u98_line.png');
+}
+
+.u176_line {
+    position:absolute;
+    left:1px;
+    top:1369px;
+    width:730px;
+    height:3px;
+}
+
+.u176 {
+    position:absolute;
+    left:1px;
+    top:1369px;
+    width:730px;
+    height:3px
+}
+
+.u178 {
+    position:absolute;
+    left:9px;
+    top:1390px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u179 {
+    position:absolute;
+    left:62px;
+    top:1390px;
+    width:280px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u180 {
+    position:absolute;
+    left:9px;
+    top:1451px;
+    width:70px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181_line {
+    background-image: url('../独立回答问题页面_files/u181_line.png');
+}
+
+.u181_line {
+    position:absolute;
+    left:2px;
+    top:1444px;
+    width:727px;
+    height:3px;
+}
+
+.u181 {
+    position:absolute;
+    left:2px;
+    top:1444px;
+    width:727px;
+    height:3px
+}
+
+.u182_line {
+    background-image: url('../独立回答问题页面_files/u182_line.png');
+}
+
+.u182_line {
+    position:absolute;
+    left:79px;
+    top:1455px;
+    width:3px;
+    height:13px;
+}
+
+.u182 {
+    position:absolute;
+    left:79px;
+    top:1455px;
+    width:3px;
+    height:13px
+}
+
+.u183 {
+    position:absolute;
+    left:10px;
+    top:1419px;
+    width:70px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u184_line {
+    background-image: url('../独立回答问题页面_files/u184_line.png');
+}
+
+.u184_line {
+    position:absolute;
+    left:79px;
+    top:1423px;
+    width:3px;
+    height:13px;
+}
+
+.u184 {
+    position:absolute;
+    left:79px;
+    top:1423px;
+    width:3px;
+    height:13px
+}
+
+.u185 {
+    position:absolute;
+    left:90px;
+    top:1418px;
+    width:80px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u186_container {
+    position:absolute;
+    left:691px;
+    top:1377px;
+    width:39px;
+    height:40px;
+}
+
+#u186_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:39px;
+    height:40px;
+}
+
+.u187 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:35px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u186 {
+    position:absolute;
+    left:691px;
+    top:1377px;
+    width:39px;
+    height:40px
+}
+
+.u188_original {
+    background-image: url('../独立回答问题页面_files/u188_original.png');
+}
+
+.u188_container {
+    position:absolute;
+    left:88px;
+    top:1452px;
+    width:642px;
+    height:148px;
+}
+
+#u188_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:642px;
+    height:148px;
+}
+
+.u189 {
+    position:absolute;
+    left:2px;
+    top:66px;
+    width:638px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u188 {
+    position:absolute;
+    left:88px;
+    top:1452px;
+    width:642px;
+    height:148px
+}
+
+.u190_original {
+    background-image: url('../独立回答问题页面_files/u190_original.png');
+}
+
+.u190_container {
+    position:absolute;
+    left:639px;
+    top:1600px;
+    width:90px;
+    height:30px;
+}
+
+#u190_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:36px;
+}
+
+.u191 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:86px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u190 {
+    position:absolute;
+    left:639px;
+    top:1600px;
+    width:90px;
+    height:30px
+}
+
+.u193_original {
+    background-image: url('../页尾_files/u100_original.png');
+}
+
+.u193_container {
+    position:absolute;
+    left:0px;
+    top:1647px;
+    width:730px;
+    height:253px;
+}
+
+#u193_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:730px;
+    height:253px;
+}
+
+.u194 {
+    position:absolute;
+    left:2px;
+    top:118px;
+    width:726px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u193 {
+    position:absolute;
+    left:0px;
+    top:1647px;
+    width:730px;
+    height:253px
+}
+

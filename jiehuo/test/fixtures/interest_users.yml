@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cur_user_id: 1
+  int_user_id: 2
+  score: 1
+  state: 1
+
+two:
+  cur_user_id: 2
+  int_user_id: 1
+  score: 1
+  state: 1

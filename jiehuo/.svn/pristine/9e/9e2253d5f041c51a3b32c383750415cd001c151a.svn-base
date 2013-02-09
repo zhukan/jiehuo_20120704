@@ -1,0 +1,33 @@
+<div class="ownque">
+  <%= form_for @comment,:url=>'/comments/create',:html=>{:id=>"new_comment_"+@answer_id,:autocomplete => "off"},:remote => true do |f| %>
+    <textarea id="comment_body_<%=h @answer_id%>" name="comment[body]" class="own_text" rows="10" cols="25" style="width: 644px; height: 103px;"></textarea>
+    <input type="hidden" value=<%=h @answer_id%> name=comment[answer_id]>
+    <div style="display: none;" id="div_comment_error"></div>
+    <div class="own_btn2">
+      <%= f.submit "", :class=>"an_btn"%>
+    </div>
+  <%end%>
+</div>
+<script type="text/javascript">
+    var new_comment_selector = "#new_comment_"+<%=h @answer_id%>;
+    $(new_comment_selector).validate({
+        debug:true,
+        rules:{
+            "comment[body]":{
+                required:true,
+                maxlength:500
+            }
+        },
+        messages:{
+            "comment[body]":{required:"一个字都没有，TA怎么知道你的想法呢？",maxlength:"评论最多能输入500个中文字哦！"}
+            },
+        errorPlacement:function(error,element)
+        {
+            element.removeClass("error");
+            $("#div_comment_error").html(error.html());
+            $("#div_comment_error").addClass("error");
+            $("#div_comment_error").show();
+        },
+        success: "valid"
+    });
+</script>

@@ -1,0 +1,8 @@
+<div class="r_pic"><img src="../assets/line02.jpg" border="0" /></div>
+<div class="xq">
+  <h1>你可能感兴趣的考题</h1>
+
+  <ul class="hot">
+    <%= render(:partial=>'/share/li_interest_ask',:object => interest_ask,:locals => { :ask => ask })%>
+  </ul>
+</div>

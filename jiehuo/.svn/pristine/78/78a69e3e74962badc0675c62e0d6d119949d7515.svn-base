@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  school_id: 1
+  name: MyString
+  provinceid: 1
+  creator: MyString
+  modifier: MyString
+
+two:
+  school_id: 2
+  name: MyString
+  provinceid:  2
+  creator: MyString
+  modifier: MyString
