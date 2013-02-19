@@ -1,0 +1,99 @@
+<style type="text/css">
+    #preview {
+        display: none;
+        position: absolute;
+    }
+</style>
+<div class="mid clearfix">
+  <div class="left">
+    <div class="l_morebox">
+      <h1>关注更多的考题</h1>
+      <ul class="kmtitle">
+        <% @domains.each do |domain| %>
+            <li>
+              <h3><%= h domain.name %></h3>
+
+              <div class="kmlist">
+                <% domain.projects.each do |project| %>
+                    <a href="javascript:void(0);" class="hover" id="a_project_<%= h project.project_id %>"><%= h project.name %>
+                      <%= input_hidden_project_detail(project) %>
+                    </a>
+                <% end %>
+              </div>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right">
+    <%= render(:partial =>'/share/facebox',:object=>@person)  %>
+    <%= render :partial => '/share/interest_hot_ask', :object => @hot_ask_rank %>
+  </div>
+</div>
+
+<script type="text/javascript">
+    this.imagePreview = function () {
+        /* CONFIG */
+        xOffset = 0;
+        yOffset = 27;
+        /* END CONFIG */
+
+        $("a.hover").hover(function (e) {
+                    var div_str = "";
+                    $("#project_detail_layer").html("");
+                    project_intrduce = $(this).children().attr("intrduce");
+                    follower = $(this).children().attr("followers");
+                    follow_state = $(this).children().attr("follow_state");
+
+                    var project_follow_path = "/projects/follow/" + $(this).attr("id").match(/\d+/g);
+                    var project_unfollow_path = "/projects/unfollow/" + $(this).attr("id").match(/\d+/g);
+
+                    div_str = "<div id='project_detail_layer'>" +
+                            "<div id='preview' class='explain'>" +
+                            "<div class='explain_t'><img src='/assets/bg_e.jpg' border='0' /></div>" +
+                            "<div class='explain_m'>" +
+                            "<div class='e_text' name='e_text'></div>" +
+                            "<div class='e_gz'><span id='follow_count'></span>" +
+                            '<%= link_to "",:remote => true ,:class =>"followpath",:id=>"a_follow_link" do%>' +
+                            "<% end %>" +
+                            "</div>" +
+                            "</div>" +
+                            "</div>" +
+                            "</div>";
+
+                    $("body").append(div_str);
+
+                    if (follow_state == "false") {
+                        $("#a_follow_link").attr("href", project_follow_path);
+                        $("#a_follow_link").html("<img src='/assets/btn11.jpg' border='0' id='img_follow' />");
+                    }
+                    else {
+                        $("#a_follow_link").attr("href", project_unfollow_path);
+                        $("#a_follow_link").html("<img src='/assets/btn14.jpg' border='0' id='img_follow' />");
+                    }
+
+                    $("#preview")
+                            .css("top", ($(this).position().top + yOffset) + "px")
+                            .css("left", ($(this).position().left) + "px")
+                            .fadeIn("slow");
+
+                    $(".e_text").html(project_intrduce);
+                    $("#follow_count").html(follower);
+                },
+                function () {
+                    $("#preview").hover(
+                            function () {
+                            },
+                            function () {
+                                $("#preview").fadeOut("fast")
+                            }
+                    );
+                });
+    };
+    // 页面加载完执行
+    $(document).ready(function () {
+        imagePreview();
+    });
+
+</script>

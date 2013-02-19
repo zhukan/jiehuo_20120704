@@ -1,0 +1,36 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Section:</b>
+  <%= @section.section_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @section.name %>
+</p>
+
+<p>
+  <b>所属学科:</b>
+  <%= @section.project.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @section.description %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @section.creator %>
+</p>
+
+<p>
+  <b>Modifier:</b>
+  <%= @section.modifier %>
+</p>
+
+
+<%= link_to 'Edit', edit_cms_section_path(@section) %> |
+<%= link_to 'Back', cms_sections_path %>

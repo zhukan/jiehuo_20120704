@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>解惑</title>
+  <!--通过用户环境变量判断用户是否使用"Windows NT 5.2", "Windows NT 5.1"操作系统，以上2个操作系统不支持clear-type字体，CSS文件可能不同-->
+  <% if use_yahei_font?(request.env["HTTP_USER_AGENT"]) %>
+      <%= stylesheet_link_tag "application" %>
+  <% else %>
+      <%= stylesheet_link_tag "application" %>
+  <% end %>
+  <%= yield :styles %> <!--有些页面有单独的CSS样式时，可以用content_for :styles 标签引入特有的CSS-->
+  <!--SEO关键字以及网站内容说明-->
+  <meta name="keywords" content="#"/>
+  <meta name="description" content="#"/>
+  <!--在浏览器的地址栏添加ico图标-->
+  <link rel="shortcut icon" href="/favicon.ico?v=003"/>
+  <%= csrf_meta_tags %>
+  <!--去掉如下2个jquery包引入会导致所有表中的记录都无法删除的问题： http://chinacheng.iteye.com/blog/1441983-->
+  <%= javascript_include_tag "application" %>
+
+
+  <%= yield :scripts %> <!--有些页面有单独的JS时，可以用content_for :scripts 标签引入js-->
+</head>
+
+<body>
+<div class="page">
+  <div class="top">
+    <div class="logo"><img src="/assets/l_01.jpg" border="0"/></div>
+  </div>
+
+  <div class="navbox">
+
+    <div class="nav">
+      <%= render(:partial => 'layouts/nav', :object => request.path) %>
+    </div>
+
+    <div class="own"></span>
+      <a href="/people/<%= current_user.id %>">我的主页</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="/user_profile/basic">修改资料</a>&nbsp;&nbsp;<span>|</span>
+      &nbsp;&nbsp;<%= link_to('退出', destroy_user_session_path, :method => :delete) %></div>
+
+  </div>
+
+
+  <div id="main">
+    <div class="container">
+      <div class="left_wrapper">
+        <%= yield %>
+      </div>
+      <div class="sidebar">
+        <%= yield :sidebar %>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="d_logo"><img src="/assets/l_02.jpg" border="0"/></div>
+    <div class="d_t1"> &nbsp;&nbsp;2012&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备12019281号 </div>
+    <div class="d_t2"><a href="#">关于"解惑"</a>&nbsp;·&nbsp;<a href="#">建议反馈</a>&nbsp;·&nbsp;<a href="javascript:openXieyi()">"解惑"协议</a>&nbsp;·&nbsp;<a href="#">帮助指南</a>
+    </div>
+  </div>
+</div>
+<script>
+ function  openXieyi()
+  {
+      window.open('/xieyi.html','协议','height=1000,width=1000,top=0,left=0,toolbar=no,menubar=no,scrollbars=yes, resizable=no,location=no, status=no');
+
+  }
+
+
+
+</script>
+</body>
+</html>
+
+
+

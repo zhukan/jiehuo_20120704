@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div class="page">
+	<div class="top">
+		<div class="logo"><img src="images/l_01.jpg" border="0" /></div>
+	</div>
+	
+	<div class="navbox">
+		<div class="nav">
+			<ul class="navtitle">
+				<li>考题广场</li>
+				<li><a href="#">添加考题</a></li>
+			</ul>
+		</div>
+		<div class="own"><a href="#">我的收藏</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="#">修改资料</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a href="#">退出</a></div>		
+	</div>
+	
+	
+	
+	<div class="mid clearfix">
+		<div class="b_userbox">
+			<div class="user_box1">
+				<h1><img src="images/tou6.jpg" border="0" /></h1>
+				<ul class="usertitle1">
+					<li>
+						<div class="use_name1">爱茉莉</div>
+						<div class="jia_btn1"><a href="#"><img src="images/btn18.jpg" border="0" /></a></div>
+					</li>
+   					<li><h3>上海&nbsp;&nbsp;卢湾区</h3></li>  
+					<li>学校：北京艾菲尔高校</li>
+					<li>个人简介：大二计算机在读，擅长C++编程，喜欢吃饱了睡大二计算机在读，擅长C++编程，喜欢吃饱了睡大二计算机在读，擅长C++编程，喜欢吃饱了睡大二计算机在</li>
+				</ul>
+			</div>
+			<ul class="b_f">
+				<li><a href="#"><div class="b_usertext"><span>598</span><br />关注Ta的同学</div></a></li>
+				<li><a href="#"><div class="b_usertext"><span>98</span><br />Ta关注的同学</div></a></li>
+			</ul>
+		</div>
+		<div class="left">
+			<div class="tb_main">
+				<div class="usert">
+					<ul class="u_tit">
+						<li class="u_first">出过(90) </li>
+						<li ><a href="#">答过(190) </a></li>
+						<li ><a href="#">收藏(50) </a></li>
+					</ul>
+				</div>
+				<ul class="list_title clearfix">
+					<li>
+		
+						<div class="list clearfix">
+							<div class="list_l">
+								<h1>题干</h1>
+								<h2><a href="#">在所列出的：1、字处理软件</a>
+								</h2>
+							</div>
+							<div class="list_r">
+								<h1><img src="images/tou3.jpg" border="0" /></h1>
+								<h2><a href="#">收藏</a><br /><a href="#">不感兴趣</a></h2>
+							</div>
+						</div>	
+						<div class="bc">
+							<div class="bc_top"><img src="images/bg_bct.jpg" border="0" /></div>
+							<div class="bc_main">
+								<div class="nr1">
+									<div class="bcb">补充：</div>
+									<div class="bcn"></div>
+								</div>
+							</div>
+						</div>
+						<div class="dr">
+							<div class="drm">190位同学解答了此题，20位同学写下了他们的解题思路，30位同学参与了讨论</div>
+							<div class="btn03"><a href="#"><img src="images/btn3.jpg" border="0" /></a></div>	
+						</div>	
+								
+					</li>
+					<li>
+						
+						<div class="list clearfix">
+							<div class="list_l">
+								<h1>题干</h1>
+								<h2><a href="#">在所列出的：</a>
+								</h2>
+							</div>
+							<div class="list_r">
+								<h1><img src="images/tou3.jpg" border="0" /></h1>
+								<h2><a href="#">收藏</a><br /><a href="#">不感兴趣</a></h2>
+							</div>
+						</div>	
+						<div class="bc">
+							<div class="bc_top"><img src="images/bg_bct.jpg" border="0" /></div>
+							<div class="bc_main">
+								<div class="nr1">
+									<div class="bcb">补充：</div>
+									<div class="bcn">题目是我在《高级程序员》习题集中查看到的考题，答案上写了A，但我觉得应该是B，请各位同学帮忙解答,题目是我在《高级程序员》习题集中查看到的考题，答案上写了A，但我觉得应该是B，请各位同学帮忙解答在...</div>
+								</div>
+							</div>
+						</div>
+						<div class="dr">
+							<div class="drm">190位同学解答了此题，20位同学写下了他们的解题思路，30位同学参与了讨论</div>
+							<div class="btn03"><a href="#"><img src="images/btn3.jpg" border="0" /></a></div>	
+						</div>	
+								
+					</li>
+					<li>
+						
+						<div class="list clearfix">
+							<div class="list_l">
+								<h1>题干</h1>
+								<h2><a href="#">在所列出的：1、字处理软件，2、Linux，3、Unix，4、学籍管理系统，5、Windows XP和6、Office 2003等六个软件中，属于系统软件的有______。<br /> A、全部都不是 <br />B、1,2,3,5<br />C、1,2,3 <br />D、2,3,5 </a>
+								</h2>
+							</div>
+							<div class="list_r">
+								<h1><img src="images/tou3.jpg" border="0" /></h1>
+								<h2><a href="#">收藏</a><br /><a href="#">不感兴趣</a></h2>
+							</div>
+						</div>	
+						<div class="bc">
+							<div class="bc_top"><img src="images/bg_bct.jpg" border="0" /></div>
+							<div class="bc_main">
+								<div class="nr1">
+									<div class="bcb">补充：</div>
+									<div class="bcn">题目是我在《高级程序员》习题集中查看到的考题，答案上写了A，但我觉得应该是B，请各位同学帮忙解答,题目是我在《高级程序员》习题集中查看到的考题，答案上写了A，但我觉得应该是B，请各位同学帮忙解答在...</div>
+								</div>
+							</div>
+						</div>
+						<div class="dr">
+							<div class="drm">190位同学解答了此题，20位同学写下了他们的解题思路，30位同学参与了讨论</div>
+							<div class="btn03"><a href="#"><img src="images/btn3.jpg" border="0" /></a></div>	
+						</div>	
+								
+					</li>
+					<li>
+						
+						<div class="list clearfix">
+							<div class="list_l">
+								<h1>题干</h1>
+								<h2><a href="#">在所列出的：1、字处理软件，2、Linux，3、Unix，4、学籍管理系统，5、Windows XP和6、Office 2003等六个软件中，属于系统软件的有______。<br /> A、全部都不是 <br />B、1,2,3,5<br />C、1,2,3 <br />D、2,3,5 </a>
+								</h2>
+							</div>
+							<div class="list_r">
+								<h1><img src="images/tou3.jpg" border="0" /></h1>
+								<h2><a href="#">收藏</a><br /><a href="#">不感兴趣</a></h2>
+							</div>
+						</div>	
+						<div class="bc">
+							<div class="bc_top"><img src="images/bg_bct.jpg" border="0" /></div>
+							<div class="bc_main">
+								<div class="nr1">
+									<div class="bcb">补充：</div>
+									<div class="bcn">题目是我在《高级程序员》习题集中查看到的考题，答案上写了A，但我觉得应该是B，请各位同学帮忙解答,题目是我在《高级程序员》习题集中查看到的考题，答案上写了A，但我觉得应该是B，请各位同学帮忙解答在...</div>
+								</div>
+							</div>
+						</div>
+						<div class="dr">
+							<div class="drm">190位同学解答了此题，20位同学写下了他们的解题思路，30位同学参与了讨论</div>
+							<div class="btn03"><a href="#"><img src="images/btn3.jpg" border="0" /></a></div>	
+						</div>	
+								
+					</li>
+					
+				</ul>
+				<div class="listmore"><a href="#"><img src="images/more.jpg" border="0" /></a></div>
+			</div>
+			
+		</div>
+		
+		<div class="right">
+
+			<div class="xq1">
+				<h2>关注<span> 23 门学科</span></h2>
+				<ul class="user_focus clearfix">
+					<li>
+						<div class="user_xk"><a href="#">计算机文化</a><br />在该学科下有19813道考题</div>
+						<input type="button" class="user_btn01" name="" value=""  />
+					</li>
+					<li>
+						<div class="user_xk"><a href="#">计算机文化</a><br />在该学科下有19813道考题</div>
+						<input type="button" class="user_btn02" name="" value=""  />
+					</li>
+					<li>
+						<div class="user_xk"><a href="#">计算机文化</a><br />在该学科下有19813道考题</div>
+						<input type="button" class="user_btn02" name="" value=""  />
+					</li>
+					<li>
+						<div class="user_xk"><a href="#">计算机文化</a><br />在该学科下有19813道考题</div>
+						<input type="button" class="user_btn02" name="" value=""  />
+					</li>
+					<li>
+						<div class="user_xk"><a href="#">计算机文化</a><br />在该学科下有19813道考题</div>
+						<input type="button" class="user_btn02" name="" value=""  />
+					</li>
+					<li>
+						<div class="user_xk"><a href="#">计算机文化</a><br />在该学科下有19813道考题</div>
+						<input type="button" class="user_btn02" name="" value=""  />
+					</li>
+					<li>
+					<input type="button" class="user_btn03" name="" value=""  />
+					<input type="button" class="user_btn04" name="" value=""  />
+					</li>
+				</ul>
+			</div>
+			
+			<div class="xq">
+				<h1>关注他的同学</h1>
+				<ul class="user_fans clearfix">
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+				</ul>
+			</div>
+			
+			<div class="xq">
+				<h1>他关注的同学</h1>
+				<ul class="user_fans clearfix">
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+					<li><img src="images/tou7.jpg" border="0" /></li>
+				</ul>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+	
+	<div class="foot">
+		<div class="d_logo"><img src="images/l_02.jpg" border="0" /></div>
+		<div class="d_t1">©&nbsp;&nbsp;2012&nbsp;&nbsp;版权所有</div>
+		<div class="d_t2"> <a href="#">关于题库</a>&nbsp;·&nbsp;<a href="#">建议反馈</a>&nbsp;·&nbsp;<a href="#">题库协议</a>&nbsp;·&nbsp;<a href="#">帮助指南</a></div>
+	</div>
+
+
+</div>
+</body>
+</html>

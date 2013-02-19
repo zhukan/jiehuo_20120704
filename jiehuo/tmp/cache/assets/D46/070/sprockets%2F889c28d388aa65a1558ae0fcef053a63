@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1341477021.24083:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%829eb74f2149d638367ef29af381ecbeI"logical_path;
+FI"icon15.gif;
+TI"pathname;
+FI"'$root/app/assets/images/icon15.gif;
+FI"content_type;
+FI"image/gif;
+FI"
+mtime;
+FI"2012-07-04T12:04:58+08:00;
+FI"length;
+FI"410;
+FI"digest;
+F"%e41866c6f3114a519e38678d40cf72bfI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

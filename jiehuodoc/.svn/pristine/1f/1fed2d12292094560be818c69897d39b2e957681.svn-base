@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>基本资料</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="page">
+	<div class="top">
+		<div class="logo"><img src="images/l_01.jpg" border="0" /></div>
+	</div>
+	<div class="navbox"></div>
+	<div class="mid clearfix">
+		<div class="b_list">
+			<ul class="b_listtitle">
+				<li class="frist"><a href="#" > 基本资料</a></li>
+				<li><a href="#">帐号密码</a></li>
+				<li><a href="#">修改头像</a></li>
+			</ul>
+			
+		</div>
+		<div class="b_main">
+			<h1>基本资料</h1>
+			<div class="b_mainbox">
+				<table width="460" border="0" cellspacing="9" cellpadding="0">
+				  <tr>
+					<th>登录名：</th>
+					<td><div class="b_word">s****8@163.com<a href="#">修改密码</a></div></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>昵称：</th>
+					<td><input type="text" class="b_text" name="" value="" /></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>所在地：</th>
+					<td>
+						<ul class="b_seltitle">
+							<li>
+								<select class="b_sel">
+									<option>浙江</option>
+									<option>上海</option>
+									<option>北京</option>
+									<option>广州</option>
+									<option>山东</option>
+									<option>福建</option>
+									<option>四川</option>
+									<option>云南</option>
+								</select>
+							</li>
+							<li>
+								<select>
+									<option>杭州</option>
+									<option>嘉兴</option>
+									<option>湖州</option>
+									<option>温州</option>
+									<option>丽水</option>
+									<option>台州</option>
+								</select>
+							</li>
+						</ul>
+					</td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>性别：</th>
+					<td>
+						<ul class="b_nvtitle">
+							<li><input type="radio" name="radio" class="b_radio" value="radio" />男</li>
+							<li><input type="radio" name="radio" class="b_radio" value="radio" />女</li>
+						</ul>
+					</td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th>生日：</th>
+					<td>
+						<ul class="b_seltitle">
+							<li>
+								<select class="b_sel">
+									<option>1980</option>
+									<option>1981</option>
+									<option>1980</option>
+									<option>1981</option>
+									<option>1980</option>
+									<option>1981</option>
+									<option>1980</option>
+									<option>1981</option>
+								</select>&nbsp;年
+							</li>
+							<li>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+								</select>&nbsp;月
+							</li>
+							<li>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+									<option>26</option>
+									<option>27</option>
+									<option>28</option>
+									<option>29</option>
+									<option>30</option>
+									<option>31</option>
+								</select>&nbsp;日
+							</li>
+						</ul>
+					</td>
+					<td>&nbsp;</td>
+				 <tr>
+					<th>联系邮箱：</th>
+					<td><div class="b_word">sy0928@163.com</div></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  <tr>
+					<th><span>*</span>个人介绍：</th>
+					<td><textarea class="b_in" rows="5" cols="30"/></textarea></td>
+					<td>&nbsp;</td>
+				  </tr>
+				   <tr>
+					<th></th>
+					<td><input type="button" class="b_btn" name="" value=""  /></td>
+					<td>&nbsp;</td>
+				  </tr>
+				  
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="foot">
+		<div class="d_logo"><img src="images/l_02.jpg" border="0" /></div>
+		<div class="d_t1">©&nbsp;&nbsp;2012&nbsp;&nbsp;版权所有</div>
+		<div class="d_t2"> <a href="#">关于题库</a>&nbsp;·&nbsp;<a href="#">建议反馈</a>&nbsp;·&nbsp;<a href="#">题库协议</a>&nbsp;·&nbsp;<a href="#">帮助指南</a></div>
+	</div>
+
+
+</div>
+</body>
+</html>

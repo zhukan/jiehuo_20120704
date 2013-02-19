@@ -1,0 +1,134 @@
+1.设置客户端编码
+ vi /etc/sysconfig/i18n
+
+　　将内容改为
+
+　　LANG="zh_CN.GB18030"
+
+　　LANG="zh_CN.UTF-8"
+
+
+vi /etc/bashrc
+
+vi .bash_login
+
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+
+2.安装smb
+
+yum install samba
+
+uhz003430.chinaw3.com
+
+Hzsdlx
+
+smb 设置
+http://blog.sina.com.cn/s/blog_4c7d04b901011qv5.html
+
+防火墙打开
+
+http://blog.sina.com.cn/s/blog_4c7d04b901011qv5.html
+
+查看用到的端口
+
+ netstat -tlnp |grep smb
+ 
+
+vim /etc/sysconfig/iptables #配置防火墙端口
+   -A INPUT -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT
+   -A INPUT -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT
+   -A INPUT -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT
+   -A INPUT -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT
+   service iptables restart  重启防火墙，使规则生效
+   
+   
+   
+   用户组
+   
+   koven:x:102:105::/home/koven:/bin/bash
+   
+   rvm 安装
+   
+   
+   下载新的ssl本地判别文件
+
+    wget http://curl.haxx.se/ca/cacert.pem
+
+并更名为ca-bundle.crt放置到默认目录
+
+     mv cacert.pem ca-bundle.crt  | mv ca-bundle.crt /etc/pki/tls/certs/
+     
+     
+ curl -L get.rvm.io | bash -s stable  
+ 
+ 安装git
+ 
+ http://blog.csdn.net/tiancaimvp/article/details/6996924
+ 
+ http://code.google.com/p/git-core/downloads/detail?name=git-1.7.9.6.tar.gz&can=2&q=
+ 
+ http://www.linuxidc.com/Linux/2012-03/57034.htm  
+ 
+ 
+ 更改文件夹所属
+ chown -R koven /home/koven 
+ 
+ rak db:create 
+ 
+ js问题：
+ 
+gem 'execjs'
+gem 'therubyracer'
+
+安装rmagick
+
+先安装ImageMagick 
+然后
+yum install ImageMagick-devel
+
+http://rails-deployment.group.iteye.com/group/wiki/1296-deploy-rails-on-linux
+
+只安装 ImageMagick-6.5.8-8
+Zjjx8545
+
+
+mysql 不允许远程连接
+
+
+1。 改表法。可能是你的帐号不允许从远程登陆，只能在localhost。这个时候只要在localhost的那台电脑，登入mysql后，更改 "mysql" 数据库里的 "user" 表里的 "host" 项，从"localhost"改称"%"
+
+mysql -u root -pvmwaremysql>use mysql;
+mysql>update user set host = '%' where user = 'root';
+mysql>select host, user from user;
+
+
+2.
+如果你想允许用户mysql从ip为127.0.0.1的主机连接到mysql服务器，并使用Zjjx8545作为密码
+
+GRANT ALL PRIVILEGES ON *.* TO'root'@'127.0.0.1'IDENTIFIED BY 'Zjxh8545' WITH GRANT OPTION;
+
+
+添加用户
+
+http://blog.sina.com.cn/s/blog_8997edd501014ret.html
+
+
+从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行
+
+find / -type f -name "*.log" | xargs grep "ERROR"
+
+
+从根目录开始查找所有扩展名为.log的文本文件，并找出包含”ERROR”的行
+
+find /home/koven/.rvm -type f -name "*.*" | xargs grep "No info could be read for"
+
+root 强制踢掉用户
+w 出用户
+pkill -kill -t TTY
+pkill -kill -t pts/2
+
+
+试用机:
+
+admin:x:501:505::/home/admin:/bin/bash

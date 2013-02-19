@@ -1,0 +1,56 @@
+<li>
+  <div class="list clearfix">
+    <div class="list_l">
+      <h1>题干</h1>
+
+      <h2><%= jiehuo_simple_format h ask.the_ask.body %>
+        <% unless ask.the_ask.image_url.nil? %>
+            <br/>
+            <%= image_tag(ask.the_ask.image_url(:ask_image_size)) %>
+        <% end %>
+        <% format_ask_body_item(ask).each do |body_item| %>
+            <br/><%= jiehuo_simple_format h body_item %>
+        <% end %>
+      </h2>
+
+      <h1>答案</h1>
+
+      <div class="list_an">
+        <h3 id="h3_home_see_result_<%= ask.the_ask.ask_id %>">查看出题者给出的答案
+          <a href="javascript:show_result('h3_home_see_result_<%= ask.the_ask.ask_id %>','<%= jiehuo_simple_format h ask.the_ask.result.gsub("|", "  ") %>');" id="home_see_result_<%= ask.the_ask.ask_id %>">点击这里</a>
+        </h3>
+      </div>
+    </div>
+
+    <div class="list_r">
+      <h1>
+        <a title="<%= h ask.owner.name %>" href="/people/<%= ask.owner.user_id %>"><%= image_tag(ask.owner.avatar_url(:mid), :alt => "#{ask.owner.name}") %></a>
+      </h1>
+
+      <h2><%= a_favorite_ask(current_user.id, ask.the_ask.ask_id) %></h2>
+    </div>
+  </div>
+
+  <div class="bc">
+    <div class="bc_top"><img src="/assets/bg_bct.jpg" border="0"/></div>
+    <div class="bc_main">
+      <div class="nr1">
+        <div class="bcb">补充：</div>
+        <div class="bcn"><%= jiehuo_simple_format h ask.the_ask.comment %></div>
+      </div>
+    </div>
+  </div>
+  <div class="dr">
+    <div class="drm"><%= h ask.answers_count %>位同学解答了此题，<%= h ask.ask_comments_count %>
+      位同学写下了他们的解题思路，<%= h ask.ask_answers_comments_count %>位同学参与了讨论
+    </div>
+    <div class="btn03"><a href=<%= ask_path(ask.the_ask.ask_id) %>><img src="/assets/btn3.jpg" border="0"/></a>
+    </div>
+  </div>
+  <script type="text/javascript">
+      function show_result(id, result) {
+          $("#" + id).html(result);
+
+      }
+  </script>
+</li>

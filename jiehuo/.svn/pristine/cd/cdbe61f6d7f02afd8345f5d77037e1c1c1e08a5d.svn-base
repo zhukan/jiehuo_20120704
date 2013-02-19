@@ -1,0 +1,22 @@
+<%if @state == "OK"%>
+    if ($("#div_comments_<%=@comment.answer_id%> :has(div)").length>0){
+        $("#dl_comments_<%=@comment.answer_id%>").prepend('<%= j render(:partial =>'comment',:object=>@one_comment) %>');
+    }else{
+        $("#div_comments_<%=@comment.answer_id%>").html("<div class='an_quebox clearfix' id='div_comments_<%=h @answer_id%>' >" +
+                "<div class='quebox_t'><img src='/assets/bg_tw.jpg' border='0' /></div>"+
+                "<div class='quebox_m'>"+
+                '<dl class="quetitle" id="dl_comments_<%=h @answer_id%>">' +
+                "<%= j render(:partial =>'comment',:object=>@one_comment) %>"+
+                "</dl>"+
+                "<div class='an_kong'></div>"+
+                "</div>"+
+                "</div>"
+        );
+    }
+    $("#comment_body_<%=@comment.answer_id%>").attr("value","");
+    var comment_str = $("#a_comments_<%=@comment.answer_id%>").html();
+    var comment_count = comment_str.match(/\d+/g);
+    $("#a_comments_<%=@comment.answer_id%>").html(Number(comment_count)+1+"条评论");
+<%else%>
+    alert("评论保存失败");
+<%end%>

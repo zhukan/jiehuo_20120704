@@ -1,0 +1,15 @@
+ <!--名片页面-->
+<div class="me">
+  <div class="tou"><a href="/people/<%=current_user.id%>"><%= image_tag(facebox.user_base.avatar_url(:large),:border=>"0")%></a></div>
+  <div class="name"><a href="/people/<%=current_user.id%>"><%=h truncate(facebox.user_base.name,:length => 10)%></a><br/><span><b>学校：</b><%=h truncate(facebox.school.name,:length => 10)%></span></div>
+  <div class="gr"><b>个人说明：</b><%=h truncate(facebox.user_base.introduce,:length => 30)%>
+  </div>
+  <div class="x">
+    <ul class="x_title">
+      <li><span><a href="/people/<%=current_user.id%>"><%=h facebox.set_asks_count%></a></span><br/>出过</li>
+      <li><span><a href="/people/<%=current_user.id%>"><%=h facebox.answered_asks_count%></a></span><br/>答过</li>
+      <li><span><a href="/people/<%=current_user.id%>"><%=h facebox.follower_count%></a></span><br/>被关注</li>
+      <li class="z"><span><a href="/projects"><%=h facebox.following_projects_count%></a></span><br/>学科</li>
+    </ul>
+  </div>
+</div>

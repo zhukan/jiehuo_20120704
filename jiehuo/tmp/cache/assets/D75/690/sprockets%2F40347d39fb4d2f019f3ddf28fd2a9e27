@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1341476497.729887:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%1245befb9516ac82fe6e19e08dd7cd98I"logical_path;
+FI"btn5.jpg;
+TI"pathname;
+FI"%$root/app/assets/images/btn5.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-07-04T12:04:58+08:00;
+FI"length;
+FI"	1206;
+FI"digest;
+F"%d3401172855ef5523a62b48c00605d1dI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

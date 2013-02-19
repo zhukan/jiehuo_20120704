@@ -1,0 +1,11 @@
+<div class="mid clearfix">
+  <div class="left">
+    <%= render 'form' %>
+  </div>
+
+  <div class="right">
+    <%= render(:partial =>'/share/facebox',:object=>@person)  %>
+    <%= render :partial => '/share/interest_hot_ask', :object => @hot_ask_rank %>
+  </div>
+</div>
+

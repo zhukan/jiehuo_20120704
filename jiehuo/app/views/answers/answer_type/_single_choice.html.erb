@@ -1,0 +1,5 @@
+<ul class="an_checklist">
+  <% single_choice.each do |chioce| %>
+      <li class="an_own"><input type="radio" name="answer[result]" class="an_checkbox" value="<%=h chioce%>"/><%=h chioce%></li>
+  <%end%>
+</ul>

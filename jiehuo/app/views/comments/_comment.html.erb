@@ -1,0 +1,10 @@
+<dd>
+  <div class="que_tou"><%= image_tag(comment.owner.avatar_url(:mid))%></div>
+  <div class="que_mainbox">
+    <h1><a href=<%=h person_path(comment.owner.user_id) %>><%=h comment.owner.name%></a></h1>
+    <div class="que_main">
+      <%=jiehuo_simple_format h comment.the_comment.body%>
+      <span><%=h comment.the_comment.created_at.strftime("%F %T")%>&nbsp;&nbsp;</span>
+    </div>
+  </div>
+</dd>

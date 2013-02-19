@@ -1,0 +1,7 @@
+<% if @error%>
+    alert("可能是数据出错了");
+<%else%>
+    var selector = "#a_collect_ask_"+<%=h @favorite_ask.ask_id%>
+    $(selector).html("收藏");
+    $(selector).attr("href","<%=people_collect_the_ask_path(@favorite_ask.ask_id)%>");
+<%end%>

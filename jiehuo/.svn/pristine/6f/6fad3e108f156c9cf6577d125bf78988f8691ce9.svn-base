@@ -1,0 +1,2 @@
+$('#hide_ask').html("已删除");
+$('#hide_ask').attr("href","javascript:void(0);");

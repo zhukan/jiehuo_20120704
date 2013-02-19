@@ -1,0 +1,4 @@
+<% if @email_user %>
+$("#exist_email").remove
+$('<label class="error" id = "exist_email" style="color: red;" for="user_email" generated="true">电子邮件已被注册</label>').insertAfter($("#user_email"))
+<% end%>

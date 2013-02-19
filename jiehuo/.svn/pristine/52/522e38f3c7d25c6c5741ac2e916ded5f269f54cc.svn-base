@@ -1,0 +1,35 @@
+
+<h1>Listing projects</h1>
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Name</th>
+    <th>所属领域</th>
+    <th>Description</th>
+    <th>Creator</th>
+    <th>Modifier</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.project_id %></td>
+    <td><%= project.name %></td>
+    <td><%= project.domain.name %></td>
+    <td><%= project.description %></td>
+    <td><%= project.creator %></td>
+    <td><%= project.modifier %></td>
+    <td><%= link_to 'Show', cms_project_path(project) %></td>
+    <td><%= link_to 'Edit', edit_cms_project_path(project) %></td>
+    <td><%= link_to '删除科目', cms_project_path(project), :method => :delete, :confirm => '确定要删除吗?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div>
+    <%= will_paginate @projects %>
+    <%= link_to 'New Project', new_cms_project_path %>
+</div>

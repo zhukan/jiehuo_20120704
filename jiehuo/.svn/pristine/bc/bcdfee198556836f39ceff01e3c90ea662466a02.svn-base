@@ -1,0 +1,80 @@
+<div class="mid clearfix">
+  <div class="left">
+    <div class="l_new clearfix">最新考题：</div>
+    <div class="w_kt clearfix">
+      <% if @projects.size>0 %>
+          <ul class="w_title clearfix" id="home_project_ul">
+            <li  id="project_li_all"><a href="/home/index?prj_id=all">全部学科</a></li>
+            <% @projects.each do |project| %>
+                <li  id="project_li_<%= h project.id %>"><a href="/home/index?prj_id=<%= h project.id %>"><%= h project.name %></a></li>
+            <% end %>
+
+          </ul>
+          <div class="kt_more"><a href="/projects">关注更多学科<span>>></span></a></div>
+      <% else %>
+          <div class="yindao">
+            <span>我关注的学科：</span><br/>您还没有订阅任何学科，点击&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立即订阅
+            <div class="ydgz"><a href="/projects"><img src="../assets/btn4.jpg" border="0"/></a></div>
+          </div>
+      <% end %>
+    </div>
+    <div class="tb_main">
+      <div id="new_ask_id" style="display: none;">
+        <a href="#" style="color:#000; text-decoration:none; font-weight:normal;"><h1>有9条新考题,点击查看</h1></a>
+      </div>
+      <ul id="id_ul" class="list_title clearfix">
+        <%= render "ask_li", :asks => @asks %>
+      </ul>
+      <div class="listmore" id="id_more_asks" onclick="more_ask(<%=@last_ask_id%>)">
+        <a href="javascript:;"><img src="../assets/more.jpg" border="0"/></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <%= render(:partial =>'/share/facebox',:object=>@person)  %>
+    <%= render :partial => '/share/interest_hot_ask', :object => @hot_ask_rank %>
+    <%= render :partial => '/share/invitation_friend'%>
+    <%= render :partial => '/share/interest_user', :object => @sidepage_interest_users %>
+
+  </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        doSelectProj("<%=@prj_id%>")
+     setInterval("count_new_ask()", 60000);
+
+    });
+    function count_new_ask() {
+        $.ajax({
+            type:"POST",
+            url:"/home/ajax_count_new_ask",
+            data:"new_ask_id=" + <%=@new_ask_id%>+"&prj_id="+"<%=@prj_id%>"
+        });
+        return true;
+    }
+
+
+    function more_ask(last_ask_id) {
+        $.ajax({
+            type:"POST",
+            url:"/home/ajax_roll_page",
+            data:"current_ask_id=" + last_ask_id +"&prj_id="+"<%=@prj_id%>"
+        });
+        return true;
+    }
+
+
+
+    function doSelectProj(prj_id)
+    {
+
+        var_li = "project_li_"+prj_id
+        if ($("#"+var_li).attr("style") == null) {
+            $("#"+var_li).css("background", "url(/assets/abg.jpg) no-repeat")
+        }
+    }
+
+
+</script>

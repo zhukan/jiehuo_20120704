@@ -1,0 +1,5 @@
+1）启动服务：
+打开一个cmd窗口  使用cd命令切换目录到d:\redis  运行 redis-server.exe redis.conf
+
+2）运行客户端
+切换到redis目录下运行 redis-cli.exe -h 127.0.0.1 -p 6379

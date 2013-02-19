@@ -1,0 +1,11 @@
+if (<%= follow.eql?(true) %>){
+  var selector = "#a_user_"+<%= user_id%>;
+  $(selector).attr("href","/unfollow/"+<%= user_id%>);
+  $(selector).removeClass("jia");
+  $(selector).addClass("qux");
+  //var classmate_count = Number($('#classmate_count').text());
+  //classmate_count = classmate_count+1;
+  //$('#classmate_count').text(classmate_count);
+}else{
+   alert("你已经关注Ta了，这里还要做的还看点");
+}

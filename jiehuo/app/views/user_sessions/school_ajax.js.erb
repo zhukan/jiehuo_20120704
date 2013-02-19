@@ -1,0 +1,16 @@
+var common_schools_content_div = $('#common_schools_id');
+common_schools_content_div.html('<%=j render "/share/show_province_school",:schools=> @schools %>');
+
+var high_schools_content_div = $('#high_schools_id');
+high_schools_content_div.html('<%=j render "/share/show_province_school",:schools=> @schools %>');
+
+
+$(function () {
+    $("dl a").click(function () {
+            school_code_text_value = $(this).attr("name");
+            $("#user_school_text").attr("value",school_code_text_value)  ;
+            school_hidden_value =  $(this).attr("code");
+            $("#user_school_id").attr("value",school_hidden_value);
+            $("#school_dialog").dialog("close")
+    });
+});

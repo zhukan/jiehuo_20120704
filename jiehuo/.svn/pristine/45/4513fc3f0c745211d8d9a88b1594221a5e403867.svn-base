@@ -1,0 +1,59 @@
+<%= form_for(:user, :url => "/users/sign_in", :html => {:autocomplete => "off", :id => "login_in"}) do |f| %>
+    <div class="page">
+      <div class="sign_box">
+        <div class="s_logo"><img src="/assets/s_logo.jpg" border="0"/></div>
+        <div class="s_r">
+          <% if flash[:alert] &&flash[:alert].size>0 %>
+              <div class="error"><%= flash[:alert] %></div>
+          <% end %>
+
+          <%= text_field :user, :email, :class => "s_name", :id => "loging_user_email", :placeholder => "邮箱" %>
+          <%= password_field :user, :password, :class => "s_name", :id => "loging_user_pwd", :placeholder => "密码" %>
+
+          <div class="s_rem">
+            <% if devise_mapping.rememberable? -%>
+                <div><%= check_box :user, :remember_me, :class => "s_checkbox" %> 下次自动登录</div>
+            <% end -%>
+
+          </div>
+          <div class="s_for"><a href="/users/password/new">忘记密码？
+            <div class="notice"></div>
+          </a></div>
+
+          <div class="s_btn">
+            <input type="hidden" name="req_url" value="<%= session[:req_url] %>">
+            <input type="submit" class="s_btn01" name="" value=""/>
+            <%= button_to_function "", "register()", :class => "s_btn02" %>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<% end %>
+<script>
+    function register() {
+        window.location.href = "/register"
+    }
+
+    /**
+     * Created by JetBrains RubyMine.
+     * User: robust
+     * Date: 12-6-20
+     * Time: 上午11:20
+     * To change this template use File | Settings | File Templates.
+     */
+
+    $(function() {
+        $("input").inputTip();  // 调用inputTip方法
+        $("input[type='button']").focus();  // 页面打开后焦点置于button上，也可置于别处。否则IE上刷新页面后焦点在第一个输入框内造成placeholder文字后紧跟光标现象
+    });
+
+
+</script>
+
+
+
+
+
+
+

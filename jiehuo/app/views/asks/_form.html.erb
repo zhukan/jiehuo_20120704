@@ -1,0 +1,186 @@
+
+<div class="ys"><img src="/assets/y.jpg" border="0"/></div>
+<div class="ct">
+  <%= form_for @ask, :html => {:class => "cmxform"} do |f| %>
+      <table width="675" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <th>领&nbsp;&nbsp;域：</th>
+          <td>
+            <ul class="cttitle clearfix" id="domain_ul">
+              <% @domains.each do |d| %>
+                  <li onclick="doDomainclicked(this)" id="domain_li_<%= h d.id %>">
+                    <a href="javascript:void(0);" id="a[<%= h d.id %>]"> <%= h d.name %>
+                      <input type="hidden" value="<%= h d.id %>">
+                    </a>
+                  </li>
+              <% end %>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>学&nbsp;&nbsp;科：</th>
+          <td>
+            <ul class="cttitle clearfix" id="projects_ul">
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th>知识点：</th>
+          <td>
+            <div name="section_ul_div" class="hasSection">
+              <ul class="cttitle clearfix" id="section_ul">
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <div class="bz" id="validate_section" style="display: none;">请选择知识点</div>
+          </td>
+        </tr>
+        </table>
+      <div class="line0"></div>
+        <table width="675" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <th>题&nbsp;&nbsp;型：</th>
+          <td>
+            <div class="tixing" id="tixing_div">
+              <%= f.radio_button :ask_type, "1", :class => "radio", :onclick => "askType_danxuan()" %>单选题
+              <%= f.radio_button :ask_type, "2", :class => "radio", :onclick => "askType_duoxuan()" %>多选题
+              <%= f.radio_button :ask_type, "3", :class => "radio", :onclick => "askType_panduan()" %>判断题
+              <%= f.radio_button :ask_type, "4", :class => "radio", :onclick => "askType_jianda()" %>简答题
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>题&nbsp;&nbsp;干：</th>
+          <td>
+            <div class="tigan">
+              <%= f.text_area :body, :class => "text", :placeholder => "考题中的特殊字符，推荐使用搜狗输入法输入" %>
+            </div>
+            <div style="display: none;"></div>
+          </td>
+        </tr>
+
+          <tr>
+            <th>图&nbsp;&nbsp;片：</th>
+            <td>
+              <div class="t_pictitle clearfix">
+                <div class="t_pic"><%= f.file_field :image %>&nbsp;JPG/GIF/PNG文件，小于5M，230×230像素效果最佳</div>
+                <div id="ask_image_alert" class="error1" style="display: none;"></div>
+              </div>
+            </td>
+          </tr>
+
+        <tr id="xuanxiang">
+          <th>选&nbsp;&nbsp;项：</th>
+          <td>
+            <ul class="xuantitle">
+              <li>
+                <div class="zi">A</div>
+                <div class="kuang">
+                  <input type="text" class="kuang1" value="" name="xuanxiang[a]"/>
+                </div>
+                <div style="display: none;"></div>
+              </li>
+              <li>
+                <div class="zi">B</div>
+                <div class="kuang">
+                  <input type="text" class="kuang1" value="" name="xuanxiang[b]"/>
+                </div>
+                <div style="display: none;"></div>
+              </li>
+              <li>
+                <div class="zi">C</div>
+                <div class="kuang">
+                  <input type="text" class="kuang1" value="" name="xuanxiang[c]"/>
+                </div>
+                <div style="display: none;"></div>
+              </li>
+              <li>
+                <div class="zi">D</div>
+                <div class="kuang">
+                  <input type="text" class="kuang1" value="" name="xuanxiang[d]"/>
+                </div>
+                <div style="display: none;"></div>
+              </li>
+              <li id="li_e_option" style="display: none;">
+                <div class="zi">E</div>
+                <div class="kuang">
+                  <input type="text" class="kuang1" name="xuanxiang[e]" id="xuanxiang_e"/>
+                </div>
+                <div style="display: none;"></div>
+              </li>
+              <li id="li_f_option" style="display: none;">
+                <div class="zi">F</div>
+                <div class="kuang">
+                  <input type="text" class="kuang1" name="xuanxiang[f]" id="xuanxiang_f"/>
+                </div>
+                <div style="display: none;"></div>
+              </li>
+              <div class="more" id="div_add_option">
+                <a href="javascript:void(0);" id="a_add_option" onclick="add_option()">增加选项</a>
+              </div>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <div id="daan_div">
+            <th>答&nbsp;&nbsp;案：</th>
+            <td>
+              <div class="daan" id="daan_danxuan">
+                <select class="select" name="daan[danxuan]" id="daan_danxuan_sel">
+                  <option value="">请选择</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                </select>
+              </div>
+
+              <div id="daan_duoxuan" style="display: none;" class="tixing">
+                <input type="checkbox" value="A"/><a name="A">A</a>
+                <input type="checkbox" value="B"/><a name="B">B</a>
+                <input type="checkbox" value="C"/><a name="C">C</a>
+                <input type="checkbox" value="D"/><a name="D">D</a>
+              </div>
+
+              <div id="daan_panduan" style="display: none;" class="daan">
+                <select class="select">
+                  <option value="">请选择</option>
+                  <option value="对">对</option>
+                  <option value="错">错</option>
+                </select>
+              </div>
+
+              <div id="daan_jianda" style="display: none;" class="tigan">
+                <textarea id="jianda_textarea" class="text" rows="10" cols="30" placeholder="在这里输入简答题的答案"></textarea>
+              </div>
+
+              <div class="noanswer">
+                <input type="checkbox" id="no_daan" name="daan[no]" class="no_r" value="TA不知道答案,等待你的解答" onclick="do_no_daan()"/><label>我不知道答案</label>
+              </div>
+            </td>
+          </div>
+        </tr>
+
+        <tr>
+          <th>补&nbsp;&nbsp;充：</th>
+          <td>
+            <div class="tigan">
+              <%= f.text_area :comment, :class => "text2", :placeholder => "在这里可以写下你对题目的疑惑，这样大家就能更好的帮你解惑" %>
+            </div>
+            <div style="display: none;"></div>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" class="tjbtn" id="tijiao"></button>
+  <% end %>
+</div>
+
+
+

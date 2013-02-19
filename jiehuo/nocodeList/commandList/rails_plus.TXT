@@ -1,0 +1,21 @@
+������:
+
+1.rails��ʱ��
+
+�Ƽ���http://www.iteye.com/topic/1112927
+�ĵ�:
+resque --> https://github.com/defunkt/resque
+resque-scheduler -->  https://github.com/defunkt/resque
+
+随机码生成插件
+gem 'simple_captcha'
+
+需要先生成   rmagick
+http://rmagick.rubyforge.org/
+gem 'rmagick'
+
+依赖系统上要装好
+# http://www.imagemagick.org/script/binary-releases.php?ImageMagick=snrlih61d1jd31tna2mvr83c97#windows
+
+ImageMagick-6.7.6-5-Q16-windows-dll.exe
+

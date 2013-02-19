@@ -1,0 +1,129 @@
+<%= form_for @user, :url => "/user_profile/update_user_basic_info", :method => "post", :html => {:autocomplete => "off", :id => "base_edit_user"} do |f| %>
+    <div class="page">
+      <div class="mid clearfix">
+        <div class="b_list">
+          <ul class="b_listtitle">
+            <li class="frist"><a href="#"> 基本资料</a></li>
+            <li><a href="/user_profile/passwd">帐号密码</a></li>
+            <li><a href="/user_profile/user_avatar">修改头像</a></li>
+          </ul>
+
+        </div>
+        <div class="b_main">
+          <h1>基本资料</h1>
+
+          <div class="b_mainbox">
+            <table width="460" border="0" cellspacing="9" cellpadding="0">
+              <tr>
+                <% if notice %>
+                    <p id="notice"><%= notice %></p>
+                <% end %>
+                <th>登录名：</th>
+                <td>
+                  <div class="b_word"><%= @user.email %>
+                    <a href="/user_profile/passwd">修改密码</a></div>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span>*</span>名称：</th>
+                <td>
+                  <%= f.text_field :name, :class => "b_text" %>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th><span>*</span>所在学校</th>
+                <td>
+                  <% if @user.school %>
+                      <% @school_name = @user.school.name %>
+                  <% else %>
+                      <% @school_name = "" %>
+                  <% end %>
+                  <%= f.text_field :school_text, :class => "reg_text",:value=>@school_name, :readonly => "readonly" %>
+                  <%= hidden_field(:user, :school_id) %>
+                  <input type="button" id="school_select_btn" class="reg_btn" name="" value=""/>
+
+                  <div class="school_div">
+                    <%= render "share/select_school" %>
+
+                  </div>
+
+
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+
+
+              <tr>
+                <th><span>*</span>性别：</th>
+                <td>
+                  <ul class="b_nvtitle">
+                    <li><%= radio_button("user", "sex", "M", :class => "b_radio") %>男</li>
+                    <li><%= radio_button("user", "sex", "F", :class => "b_radio") %>女</li>
+                  </ul>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th>生日：</th>
+                <td>
+                  <ul class="b_seltitle">
+                    <li>
+                      <%= date_select("user", "birthday", :start_year => 1949, :use_month_numbers => "true", :default => Time.now) %>
+                    </li>
+                  </ul>
+                </td>
+                <td>&nbsp;</td>
+              <tr>
+                <th><span>*</span>个人介绍：</th>
+                <td>
+                  <%= f.text_area :introduce, :class => "b_in", :cols => 30, :rows => 5 %>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>
+
+                  <button type="submit" class="b_btn"></button>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>
+
+
+<script>
+
+    $(function () {
+        $("#user_provinceid").change(function () {
+            $.ajax({
+                type:"POST",
+                url:"/user_profile/city_with_province_ajax",
+                data:"province_id=" + this.value
+            });
+            return true;
+        });
+    })
+
+    $(function () {
+        $("#base_edit_user").validate({
+            rules:{
+                "user[name]":{
+                    required:true,
+                    maxlength:5
+                },
+                "user[introduce]":{
+                    required:true,
+                    maxlength:50
+                }
+            }
+        })
+    })
+</script>

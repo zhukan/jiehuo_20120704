@@ -1,0 +1,23 @@
+$("#school_content").remove();
+var school_content_div = $('<div></div>');
+school_content_div.attr('id', 'school_content');
+<% i=0%>
+<% @schools.each do  |n, value|    %>
+<% i=i+1; %>
+school_content_div.append("<a  id='school<%=value%>' name='<%=n%>' code='<%=value%>' > <%=n%>  </a>");
+<% if(i%3==0) %>
+school_content_div.append("<br>")
+<% end %>
+<% end %>
+$("#a_div").append(school_content_div)
+
+
+$(function () {
+    $("#school_content a").click(function () {
+            school_code_text_value = $(this).attr("name");
+            $("#school_code").attr("value",school_code_text_value)  ;
+            school_hidden_value =  $(this).attr("code");
+            $("#user_school_id").attr("value",school_hidden_value);
+            $("#school_dialog").dialog("close")
+    });
+});

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1341477021.749859:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%cb220c21bd8faafc3ac9e11dee070e37I"logical_path;
+FI"btn26.jpg;
+TI"pathname;
+FI"&$root/app/assets/images/btn26.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-07-04T12:04:58+08:00;
+FI"length;
+FI"	1793;
+FI"digest;
+F"%2096b304a57be73596f7e4569f32aa02I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

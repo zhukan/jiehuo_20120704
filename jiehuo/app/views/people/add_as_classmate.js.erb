@@ -1,0 +1,9 @@
+<%if @state%>
+var var_user_id = $("#hidden_user_id").val();
+var var_url = "/people/subtract_the_classmate/"+var_user_id;
+var selector = "#classmate_"+var_user_id;
+$(selector).attr("href",var_url);
+$(selector).html("<img border='0' src='/assets/btn27.jpg'>");
+<%else%>
+ alert("添加同学失败");
+<%end%>

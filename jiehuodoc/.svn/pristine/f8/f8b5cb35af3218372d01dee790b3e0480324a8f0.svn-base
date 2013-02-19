@@ -1,0 +1,266 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0 {
+    position:absolute;
+    left:50px;
+    top:295px;
+    width:150px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u1 {
+    position:absolute;
+    left:50px;
+    top:511px;
+    width:520px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:50px;
+    top:543px;
+    width:510px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3 {
+    position:absolute;
+    left:50px;
+    top:594px;
+    width:150px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_line {
+    background-image: url('../在线题库社区_files/u4_line.png');
+}
+
+.u4_line {
+    position:absolute;
+    left:20px;
+    top:579px;
+    width:940px;
+    height:3px;
+}
+
+.u4 {
+    position:absolute;
+    left:20px;
+    top:579px;
+    width:940px;
+    height:3px
+}
+
+.u5_line {
+    background-image: url('../在线题库社区_files/u5_line.png');
+}
+
+.u5_line {
+    position:absolute;
+    left:30px;
+    top:1072px;
+    width:940px;
+    height:3px;
+}
+
+.u5 {
+    position:absolute;
+    left:30px;
+    top:1072px;
+    width:940px;
+    height:3px
+}
+
+.u6_original {
+    background-image: url('../在线题库社区_files/u6_original.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:67px;
+    top:623px;
+    width:583px;
+    height:435px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:583px;
+    height:435px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:210px;
+    width:579px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:67px;
+    top:623px;
+    width:583px;
+    height:435px
+}
+
+.u8_original {
+    background-image: url('../在线题库社区_files/u8_original.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:61px;
+    top:327px;
+    width:439px;
+    height:176px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:439px;
+    height:176px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:80px;
+    width:435px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:61px;
+    top:327px;
+    width:439px;
+    height:176px
+}
+
+.u10 {
+    position:absolute;
+    left:47px;
+    top:5px;
+    width:900px;
+    height:24px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:67px;
+    top:32px;
+    width:520px;
+    height:228px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_line {
+    background-image: url('../在线题库社区_files/u12_line.png');
+}
+
+.u12_line {
+    position:absolute;
+    left:18px;
+    top:289px;
+    width:940px;
+    height:3px;
+}
+
+.u12 {
+    position:absolute;
+    left:18px;
+    top:289px;
+    width:940px;
+    height:3px
+}
+
+.u13 {
+    position:absolute;
+    left:510px;
+    top:323px;
+    width:520px;
+    height:95px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

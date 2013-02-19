@@ -1,0 +1,84 @@
+
+���ckeditor 
+
+rails generate ckeditor:base --version=3.5.4
+
+bundle install
+
+ rake doc:rails
+
+ linux command:
+
+ ubuntu root 密码:
+ sudo passwd root
+
+ sudo apt-get install openssh-server
+
+ VMWare 桥模式上网
+ 设置桥模式vmware,然后ubuntu设置静态IP，DNS
+
+
+
+ubuntu 命令
+
+apt-get install  安装
+apt-cache search      查询安装列表
+
+linux下安装ruby
+
+查看此文：
+
+http://www.cnblogs.com/kelby/archive/2011/10/24/2223106.html
+
+sudo apt-get install libxslt1-dev libncurses5-dev
+
+      安装bundle
+      sudo gem install bundler
+
+
+ linux下安装mysql2失败:
+ sudo apt-get install libmysql-ruby libmysqlclient-dev
+
+ rails server 失败缺失js
+
+ sudo apt-get install nodejs-dev
+
+openssl 失败
+
+/**
+ rvm remove 1.9.2
+rvm install 1.9.2 -C --with-openssl-dir=$HOME/.rvm/usr
+
+
+ 1. 安装openssl：sudo apt-get install apt-get install libglobus-openssl-dev
+
+ 2. 进入$RUBY_SOURCE_HOME/ext/openssl,运行extconf.rb生成makefile:
+
+   ruby extconf.rb
+
+ 3. 编译安装: make clean -->make install
+
+ done
+**/
+  http://www.openssl.org/source/ 下载最新的openssl（我昨天下还是openssl-0.9.7d.tar.gz  今天已经是openssl-0.9.7e.tar.gz了，升得好快 ：）
+
+          tar  -zxvf openssl-0.9.7d.tar.gz
+          cd openssl-0.9.7d
+          ./config --prefix=/usr/local --openssldir=/usr/local/openssl shared
+          make
+          make test
+          make install
+
+
+mysql安装指南：
+http://dev.mysql.com/doc/refman/5.1/zh/index.html
+
+sudo apt-get install mysql-server-core-5.1
+
+http://down.tech.sina.com.cn/page/13419.html 免安装版
+
+http://tech.sina.com.cn/s/2008-05-05/07372174929.shtml
+
+sudo apt-get install mysql-server-core-5.1    mysql-client-core-5.1
+
+

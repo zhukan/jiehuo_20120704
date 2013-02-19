@@ -1,0 +1,49 @@
+<div class="mid clearfix">
+<div class="b_userbox">
+  <div class="user_box1">
+    <h1><%= image_tag(@person.user_base.avatar_url(:super_large),:border=>"0")%></h1>
+    <ul class="usertitle1">
+      <li>
+        <div class="use_name1"><%=h @person.user_base.name%></div>
+        <div class="jia_btn1">
+            <%= show_follow_button(@person.user_base.user_id)%>
+            <input type="hidden" id="hidden_user_id" value="<%=h @person.user_base.user_id%>">
+        </div>
+      </li>
+      <li><%= show_sex(@person)%></li>
+
+      <li>个人简介：<%=h @person.user_base.introduce%></li>
+    </ul>
+  </div>
+  <ul class="b_f">
+    <li>
+      <div class="b_usertext"><span><%=h @person.follower_count%></span><br/>关注Ta的同学</div>
+    </li>
+    <li>
+      <div class="b_usertext"><span><%=h @person.following_count%></span><br/>Ta关注的同学</div>
+    </li>
+  </ul>
+</div>
+
+<div class="left">
+  <div class="tb_main" id="asks_list">
+    <%= render(:partial =>'set_asks') if action_name == "show"%>
+    <%= render(:partial =>'answered_asks') if action_name == "answered_asks"%>
+    <%= render(:partial =>'favorites_asks') if action_name == "favorites_asks"%>
+  </div>
+</div>
+
+<div class="right">
+  <div class="xq1">
+    <%= render(:partial =>'following_projects',:object => @following_projects) %>
+  </div>
+
+  <div class="xq">
+    <%= render(:partial =>'followers',:object => @person.followers) %>
+  </div>
+
+  <div class="xq">
+    <%= render(:partial =>'followings',:object => @person.following) %>
+  </div>
+</div>
+</div>

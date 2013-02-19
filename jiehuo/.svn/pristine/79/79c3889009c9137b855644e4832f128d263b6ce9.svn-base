@@ -1,0 +1,12 @@
+<% if li_interest_user%>
+    <% li_interest_user.each do |user| %>
+        <li id="li_user_<%=h user[:user_id]%>">
+          <div class="tou2"><%= image_tag(user.avatar_url(:mid)) %></div>
+          <div class="name2"><a href=<%=h person_path(user[:user_id]) %>><%=h truncate(user[:name],:length => 10) %></a></div>
+          <div id="div_user_<%=h user[:user_id]%>">
+            <%= link_to '', follow_path(user), :remote => true, :class=>"jia",:id=>"a_user_#{user[:user_id]}" %>
+          </div>
+          <div class="tong"><a href="javascript:void(0);"><%=h truncate(user[:reason],:length => 50) %></a></div>
+        </li>
+    <%end%>
+<%end%>

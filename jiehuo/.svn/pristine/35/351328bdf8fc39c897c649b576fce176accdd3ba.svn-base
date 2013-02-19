@@ -1,0 +1,11 @@
+<% if @state.eql?(false) %>
+    alert("删除失败或者数据库已经有记录不能重复插入错误，搞个样式");
+<%else%>
+    var selector = "#a_project_"+<%=h @followed_project.project_id%>;
+    var project_follow_path = "/projects/follow/"+<%=h @followed_project.project_id%>;
+    $(selector).children().attr("follow_state","false");
+    $("#a_follow_link").attr("href",project_follow_path);
+    $("#a_follow_link").html("<img src='/assets/btn11.jpg' border='0' id='img_follow' />");
+    var follow_count = Number($("#follow_count").html())-1;
+    $("#follow_count").html(follow_count);
+<%end%>

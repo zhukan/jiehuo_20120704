@@ -1,0 +1,14 @@
+<% if @error %>
+    <%case%>
+        <%when @error.messages[:followed_to_many_projects] then%>
+            alert("哥，你关注了太多的学科了，你学的过来吗？");
+        <%when @error.messages[:unique_followed_projects] then%>
+            alert("哥，这门学科你已经关注过了");
+        <%else%>
+            alert("可能是数据出错了");
+    <%end%>
+<%else%>
+    var selector = "#a_follow_link_"+<%=params[:project_id]%>
+    $(selector).attr("class","user_btn01");
+    $(selector).attr("href","/people/unfollow_project/"+<%=params[:project_id]%>);
+<%end%>

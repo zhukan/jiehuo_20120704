@@ -1,0 +1,373 @@
+ubuntu 环境搭建攻略
+
+
+twitter架构
+http://wenku.baidu.com/view/b04ee16fb84ae45c3b358c5c.html
+
+1.安装ubuntu 
+采用桥模式安装网络
+    1).mysql5.1 linux官方版本安装指南。
+		2).vmware tools 安装
+		 解压
+		 sudo ./vmware-tools-distrib/vmware-install.pl 
+		 alias sd=sudo  重命名,方便
+   	3).安装ssh 
+		 sudo apt-get install ssh 
+		4).配置内部网络 192.168.1.23
+    5).Samba软件包的安装
+     #sudo apt-get install samba
+     #sudo apt-get install smbclient
+     启动Samba服务器只需执行如下命令：
+			sudo /etc/init.d/smbd restart			
+			关闭Samba服务器：
+			#sudo /etc/init.d/smbd stop
+			http://apps.hi.baidu.com/share/detail/24793837
+			共享目录给windows用户.			
+			在Ubuntu里面，要把你所共享的文件夹设置成可读写
+    （我所要共享的文件夹是/home/koven/share）：
+     sudo password root 设置root密码 
+     以root用户使用命令 chmod 777 -R /home/koven/share
+     
+     
+ 二.mysql安装  
+ 
+ 他妈的直接安装：
+  sudo apt-get install mysql-server 
+  很OK!
+  
+  http://forum.ubuntu.org.cn/viewtopic.php?f=44&t=20348
+  mysql基本设置
+  后面的都是痛苦的经历！  
+    查看文档
+    http://dev.mysql.com/doc/refman/5.1/zh/installing.html#installing-binary
+    
+    新建用户组及用户
+      shell> groupadd mysql
+    shell> useradd -g mysql mysql  
+    
+    复制解压后的mysql文件
+    sd cp -r mysql-5.1.58 /usr/local/
+    
+    ####建立链接 ln -s mysql-5.1.58  mysql 
+    安装相关文件:
+     apt get install btyacc byacc  byacc-j bison
+     apt-get install libncurses5-dev
+     sudo apt-get install g++
+    ./configure --prefix=/usr/local/mysql
+     make 
+     make install
+     
+     cp /usr/local/mysql/share/mysql/my-medium.cnf /etc/my.cnf 
+     bin/mysql_install_db --user=mysql
+     
+     安装失败:
+     apt-get install mysql-server-core-5.1 mysql-client-core-5.1
+     
+     1.如果你是从源安装的话，可以通过dpkg -l mysql-server 或
+       dpkg -l mysql-client查看
+     
+     rpm方式安装 mysql MySQL-server-5.5.21-1.linux2.6.i386.rpm
+     apt-get install rpm
+     最小化安装mysql
+     rpm -i MySQL-server-5.5.21-1.linux2.6.i386.rpm
+     再次失败。。。
+     
+     配置化安装:
+     5.1.58
+     ./configure --prefix=/usr/local/mysql --sysconfdir=/etc --localstatedir=/var/lib/mysql
+     
+      ./bin/mysql_install_db --user=mysql
+      
+      还是他妈的失败：
+      
+      安装这个：
+       sudo apt-get install mysql-server
+      
+     
+     
+ 三.安装svn
+  sudo apt-get install subversion
+      
+     
+ 四.安装rvm +rails+应用
+ 
+ 参考：http://my.oschina.net/roockee/blog/38798
+ 
+ 安装环境之前先安装一些可能的库 
+
+	sudo apt-get install curl bison build-essential git-core  nodejs-dev
+	sudo apt-get install zlib1g-dev libssl-dev  libxml2-dev  	zlib1g  libmysql-ruby libmysqlclient-dev 
+	
+	
+	
+	$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer) 
+	下载rvm
+     source /home/koven/.rvm/scripts/rvm
+     初始化环境
+     
+     	$ type rvm | head -n1
+如果返回 “rvm is a function”/rvm是一个函数，则说明一切正常。
+
+rvm notes 
+
+rvm requirements
+
+
+sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+
+安装依赖包，然后安装ruby 1.9.2
+
+ 安装ruby 1.9.2
+ rvm install 1.9.2
+
+ rvm 1.9.2 --default
+ 
+ 
+ 安装rails 需要的bundler
+ gem install bundler 
+ 
+ 进入app目录
+ 
+ bundle install
+ 
+ 安装mysql2失败:
+ 
+  sudo apt-get install libmysql-ruby libmysqlclient-dev
+ 
+ 测试应用是否能启动:
+ 
+ rails server
+ 
+ 少JS
+ 
+sudo apt-get install nodejs-dev
+
+
+
+mysql root密码没设置
+
+
+mysql 停掉
+/etc/init.d/mysql stop 
+
+
+正常启动 
+
+/usr/local/mysql/bin/mysqld_safe --user=mysql
+
+安全模式进入：
+ mysqld_safe --user=root   --skip-networking
+ 
+ mysqld_safe --skip-grant-tables
+
+
+mysql 
+
+set password for 'root'@'localhost' =password('hellolx');
+
+set password for 'root'@'localhost' =password('Zjxh8545');
+
+set password for 'mysql'@'localhost' =password('Zjjx8545');
+flush privileges;
+
+set password for 'mysql'@'localhost' =password('hellolx');
+
+
+UPDATE mysql.user SET Password=PASSWORD('Zjxh8545') WHERE User='root';
+
+
+UPDATE mysql.user SET Password=PASSWORD('Zjjx8545') WHERE User='mysql';
+
+
+insert into mysql.user(host,user,password) values('localhost','mysql',"Zjjx8545");
+
+update user set host = '%'  where user ='root';
+
+
+insert into mysql.user(host,user,password) values('localhost','root',"Zjxh8545");
+
+
+
+
+
+
+
+flush privileges;
+
+
+mysql -u root -p 
+
+mysql乱码问题：
+统一用utf-8
+http://greybeard.blog.51cto.com/3221098/642984
+http://hi.baidu.com/sleepguy/blog/item/1227c2cd5e48e05b0eb345cc.html
+
+http://wenku.baidu.com/view/1a6f461a59eef8c75fbfb316.html
+
+
+数据库创建
+rake db:create  RAILS_EVN=development
+rake db:create
+
+rake db:migrate
+
+ nginx+mongerl 环境搭建
+ 
+ 
+ lighttpd-fastcgi 环境搭建:
+ 
+ http://rails-deployment.group.iteye.com/group/wiki/1296-deploy-rails-on-linux
+ 
+ 1.安装 Ruby 的 FCGI 支持
+ libfcgi-perl - helper module for FastCGI
+ libfcgi-ruby1.9.1 - FastCGI library for Ruby
+ 
+ 2.安装 lighttpd Web Server
+ 
+ apt-get install lighttpd 
+ 
+ 
+ $HTTP["host"] == "www.iknown.com" {
+ server.document-root = "/home/koven/iknown/public"
+ server.error-handler-404 = "/dispatch.fcgi"
+ fastcgi.server = (".fcgi" =>
+    ("localhost" =>
+      ("min-procs" => 10,
+       "max-procs" => 10,
+       "socket" => "/tmp/lighttpd/socket/rails.socket",
+       "bin-path" => "/yourrails/public/dispatch.fcgi",
+       "bin-environment" => ("RAILS_ENV" => "development")
+      )
+    )
+ )
+} 
+ 
+ 
+ 
+ rmagick ubuntu安装
+
+sudo apt-get install libmagick9-dev
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Nginx+passenger Cluster环境搭建:
+
+1.nginx-full - nginx web server with full set of core modules
+
+gem sources -a http://ruby.taobao.org
+删除默认sources
+
+gem sources -r http://path.to.gem.repository/
+sudo apt-get install libcurl4-openssl-dev
+
+下载 pcre 支持rewrite
+
+gem install passenger
+passenger-install-nginx-module
+
+选择1
+
+
+sudo apt-get install libpcre3-dev
+
+/**
+ nginx path prefix: "/usr/local/nginx"
+  nginx binary file: "/usr/local/nginx/sbin/nginx"
+  nginx configuration prefix: "/usr/local/nginx/conf"
+  nginx configuration file: "/usr/local/nginx/conf/nginx.conf"
+  nginx pid file: "/usr/local/nginx/logs/nginx.pid"
+  nginx error log file: "/usr/local/nginx/logs/error.log"
+  nginx http access log file: "/usr/local/nginx/logs/access.log"
+  nginx http client request body temporary files: "client_body_temp"
+  nginx http proxy temporary files: "proxy_temp"
+  nginx http fastcgi temporary files: "fastcgi_temp"
+  nginx http uwsgi temporary files: "uwsgi_temp"
+  nginx http scgi temporary files: "scgi_temp"
+  
+  **/
+  /home/koven/share/nginx-1.0.0
+
+
+passenger-install-nginx-module
+
+/home/koven/nginx
+
+/home/robust/nginx
+
+/home/admin/nginx
+
+uhzf003016.chinaw3.com 
+
+Hzsdlx
+
+
+i9fWg8XV
+
+i9fWg8XV
+
+i9fWg8XV
+
+i9fWg8XVgJ2
+
+i9fWg8XVgJ29BXmTOOtt
+
+Hzsdyjy8545
+Hzsdyjy8545
+
+
+
+
+
+记得先启动nginx 
+sudo nginx/sbin/nginx
+然后再启动passenger start -p 3000& passenger start -p 3001
+
+
+## redis 开机自启动
+
+1、下载安装：
+1	cd /tmp
+2	wget http://redis.googlecode.com/files/redis-2.2.13.tar.gz
+3	tar -zxf redis-2.2.13.tar.gz
+4	cd redis-2.2.13
+5	make
+6	sudo make install
+
+这时Redis 的可执行文件被放到了/usr/local/bin
+2、下载配置文件和init启动脚本：
+1	wget https://github.com/ijonas/dotfiles/raw/master/etc/init.d/redis-server
+2	wget https://github.com/ijonas/dotfiles/raw/master/etc/redis.conf
+3	sudo mv redis-server /etc/init.d/redis-server
+4	sudo chmod +x /etc/init.d/redis-server
+5	sudo mv redis.conf /etc/redis.conf
+3、初始化用户和日志路径
+
+第一次启动Redis前，建议为Redis单独建立一个用户，并新建data和日志文件夹
+1	sudo useradd redis
+2	sudo mkdir -p /var/lib/redis
+3	sudo mkdir -p /var/log/redis
+4	sudo chown redis.redis /var/lib/redis
+5	sudo chown redis.redis /var/log/redis
+4、设置开机自动启动，关机自动关闭
+
+sudo update-rc.d redis-server defaults
+
+5、启动Redis：
+
+ 1	sudo /etc/init.d/redis-server start
+
+
+
+===========================
+万网云主机密码:
+Hzsdyjy8545
+
+
+
+

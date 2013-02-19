@@ -1,0 +1,22 @@
+<!--你可能感兴趣的同学-->
+<div class="xq">
+  <h1>你可能感兴趣的同学 <a href="javascript:void(0);" id="change">换一换</a> </h1>
+  <ul class="people" id="ul_interest_users">
+      <%= render(:partial=>'/share/li_interest_user',:object => interest_user)%>
+  </ul>
+  <input type="hidden" id="page_num_hidden" value="1">
+</div>
+
+<script>
+    $(function(){
+        $("#change").click(function(){
+            var pag_num = $('#page_num_hidden').val();
+            $.ajax({
+                type:"POST",
+                url:"/interest_users/get_interest_users",
+                data:"current_page="+ pag_num
+            });
+            return true;
+        });
+    });
+</script>

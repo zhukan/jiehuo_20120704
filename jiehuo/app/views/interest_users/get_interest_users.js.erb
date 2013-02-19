@@ -1,0 +1,4 @@
+$('#ul_interest_users').html("<%= j render :partial => "share/li_interest_user", :object => @li_interest_user %>");
+var page_num = $('#page_num_hidden').val();
+$('#page_num_hidden').attr("value",Number(page_num)+1);
+

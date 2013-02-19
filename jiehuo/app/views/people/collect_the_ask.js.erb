@@ -1,0 +1,13 @@
+<% if @error%>
+    <%case%>
+        <%when @error.messages[:unique_the_favorite_ask] then%>
+            alert("这个问题你已经收藏过了");
+        <%else%>
+            alert("可能是数据出错了");
+    <%end%>
+<%else%>
+    var selector = "#a_collect_ask_"+<%=h @favorite_ask.ask_id%>
+    $(selector).html("已收藏");
+    $(selector).attr("href","<%=people_uncollect_the_ask_path(@favorite_ask.ask_id)%>");
+
+<%end%>

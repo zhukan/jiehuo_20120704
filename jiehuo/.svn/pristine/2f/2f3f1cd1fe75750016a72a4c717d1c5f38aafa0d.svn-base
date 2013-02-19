@@ -1,0 +1,109 @@
+
+
+<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
+  <%= devise_error_messages! %>
+
+  <%= f.hidden_field :invitation_token %>
+
+    <div class="page">
+      <div class="reg_bg">
+        <div class="reg_left">
+          <div class="reg_logo"><img src="/assets/reg_logo.jpg" border="0"/></div>
+          <div class="reg_box">
+            <table width="500" border="0" cellspacing="9" cellpadding="0">
+              <tr>
+                <th><span>*</span>创建密码</th>
+                <td>
+                  <%= password_field :user, :password, :class => "reg_text" %>
+                </td>
+
+              </tr>
+              <tr>
+                <th><span>*</span>重复密码</th>
+                <td>
+                  <%= password_field :user, :password_confirmation, :class => "reg_text" %>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span>*</span>名称</th>
+                <td>
+
+                  <%= f.text_field :name, :class => "reg_text" %>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span>*</span>选择学校</th>
+                <td>
+                  <%= f.text_field :school_text, :class => "reg_text", :readonly => "readonly" %>
+                  <%= hidden_field(:user, :school_id) %>
+                  <input type="button" id="school_select_btn" class="reg_btn" name="" value=""/>
+                  <div class="school_div">
+                    <%= render "share/select_school" %>
+                  </div>
+
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <% if flash[:notice]&& flash[:notice]=="successfully" %>
+                  <h1><label  style="align:center;color:red;" for="user_email" generated="true">注册用户成功!</label></h1>
+              <% end %>
+
+              <tr>
+                <th></th>
+                <td>
+                  <ul class="reg_retitle">
+                    <li>
+                      <input type="submit" class="reg_reg" name="" value=""/>
+                    </li>
+                    <li><a href="#">《题库服务使用协议》</a></li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="reg_right">
+          <h1>已有题库帐号？<br/>
+            <%= button_to_function "", "signin()", :class => "btn08" %>
+          </h1>
+          <ul class="rrtitle clearfix">
+            <li><a href="#">什么是题库？</a><br/>在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库</li>
+            <li><a href="#">你能在题库做什么？</a><br/>在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的题目库在线的库</li>
+            <li><a href="#">题库中有哪些题目？</a><br/>在线的题目库在线的题目库在线的题目库在线的题目库</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+<% end %>
+
+<script >
+    $(function () {
+        $("#user_edit").validate({
+            rules:{
+                "user[password]":{
+                    required:true,
+                    rangelength:[6, 12]
+                },
+                "user[name]":{
+                    required:true,
+                    maxlength:10
+                },
+                "user[password_confirmation]":{
+                    required:true,
+                    rangelength:[6, 12],
+                    equalTo:'#user_password'
+                },
+                "user[school_text]":{
+                    required:true
+                }
+            }
+        })
+    })
+</script>

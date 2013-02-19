@@ -1,0 +1,2 @@
+var selector = "#li_user_"+<%= user_id%>;
+$(selector).html("");

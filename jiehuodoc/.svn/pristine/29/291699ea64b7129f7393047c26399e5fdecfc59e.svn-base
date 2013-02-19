@@ -1,0 +1,17 @@
+.b_userbox{ width:990px; height:156px; background:#d4d7c0; margin:0 auto; overflow:hidden; margin-top:-8px;}
+	.user_box1{ width:675px; height:156px; float:left; margin-bottom:10px;}
+		.user_box1 h1{ float:left; width:130px; height:130px; border:3px solid #fff; margin-left:14px; _margin-left:7px; margin-top:10px;} 
+		.user_box1 .usertitle1{ float:left; width:500px; margin-left:12px;margin-top:20px;} 
+		.user_box1 .usertitle1 li{ float:left; width:100%;height:20px;margin-bottom:7px; color:#22260a; text-align:left; line-height:23px; font-size:13px;overflow:hidden; }
+		.user_box1 .usertitle1 li h2{ width:90%;height:20px; line-height:22px; padding-left:20px; font-size:13px; font-weight:normal; color:#486b1c; background:url(../images/icon07_b.jpg) no-repeat 0 50%;  }
+		.user_box1 .usertitle1 li span{ color:#22260a;}
+		.user_box1 .usertitle1 li .use_name1{ float:left; height:20px; font-size:15px; color:22260a; font-weight:bold; text-align:left; line-height:25px;}
+		.user_box1 .usertitle1 li .jia_btn1{ width:76px; height:20px;  margin-left:8px; cursor:pointer; border:0; background:url(../images/btn18.jpg);}
+	.b_f{ width:297px;_width:300px; float:right; height:156px; font-size:17px; }
+	.b_f li{ float:left; width:145px; height:156px; background:#b2b987; margin-left:3px;overflow:auto;}
+	.b_f li a{color:#22260a; text-decoration:none;}
+	.b_f .b_usertext{ width:100%; padding-top:45px;font-size:20px; text-align:center; color:#22260a; line-height:30px; }
+	.b_f .b_usertext span{font-size:20px;}
+	
+.xq1 h2{ font-size:14px; color:#222222; font-weight:bold; text-align:left; text-indent:3px; margin-bottom:5px; margin-right:5px; border-bottom:1px dashed #ece8e8; padding-bottom:6px; line-height:18px; margin-top:15px;}
+		.xq1 h2 span{ color:#486b1c; font-weight:bold;}

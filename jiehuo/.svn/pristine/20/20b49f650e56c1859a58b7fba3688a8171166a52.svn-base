@@ -1,0 +1,3 @@
+module Cms::DomainsHelper
+
+end

@@ -1,0 +1,29 @@
+<%= form_for([:cms, @cms_domain]) do |f| %> <!--A此地form_for( @cms_domain)修改为form_for([:cms, @cms_domain])-->
+
+    <div class="field">
+      <%= f.label "Domain_Form" %>
+      <br/>
+      <%= f.label :name %>
+      <br/>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :description %>
+      <br/>
+      <%= f.text_area :description %>
+    </div>
+    <div class="field">
+      <%= f.label :creator %>
+      <br/>
+      <%= f.text_field :creator %>
+    </div>
+    <div class="field">
+      <%= f.label :modifier %>
+      <br/>
+      <%= f.text_field :modifier %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

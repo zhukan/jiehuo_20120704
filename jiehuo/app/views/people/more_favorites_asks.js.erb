@@ -1,0 +1,3 @@
+<%@favorites_asks.each do |ask|%>
+$('#ul_favorites_asks').append("<%= j render :partial => "ask", :object => ask %>");
+<%end%>

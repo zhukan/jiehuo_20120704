@@ -1,0 +1,39 @@
+
+      <div class="for_n" id="invite_user_to_ask" title="邀请好友一同解答">
+        <ul class="for_tm clearfix">
+          <li>好友邮箱:</li>
+          <li><input type="text" class="for_em"  name="" /></li>
+          <li><input type="button" class="for_btn03" name=""/></li>
+          <li>
+            <h3>
+              <a href="javascript:void(0);" id="cancel_invite">关闭窗口</a>
+            </h3>
+          </li>
+        </ul>
+      </div>
+
+
+<script type="text/javascript">
+    $("#invite_user_to_ask").dialog({
+        width:362,
+        autoOpen:false,
+        show:"blind"
+    });
+
+    $("#invite_user_to_ask_a").click(function () {
+        $("#invite_user_to_ask").dialog("open");
+        $("#ui-dialog-title-invite_user_to_ask").next().remove();
+        $("#ui-dialog-title-invite_user_to_ask").parent().removeClass();
+        $("#ui-dialog-title-invite_user_to_ask").parent().addClass("for_t");
+        return false;
+    });
+
+    $("#cancel_invite").click(function () {
+        $("#invite_user_to_ask").dialog("close");
+
+    });
+
+
+
+</script>
+

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1341375345.342077:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%471bcfa8a993b1a11ff642be54041dceI"logical_path;
+FI"tbg.jpg;
+TI"pathname;
+FI"$$root/app/assets/images/tbg.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2012-07-04T12:04:58+08:00;
+FI"length;
+FI"561;
+FI"digest;
+F"%c684533ad83464b5cf9cf7c0690333b0I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,0 +1,118 @@
+# coding: UTF-8
+<%= form_for([:cms, @user],:html => { :enctype =>  "multipart/form-data" }) do |f| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2> 注册时出现<%= pluralize(@user.errors.count, "") %> 个问题,亲！</h2>
+
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label "我的邮箱:" %>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+
+      <%= f.label "真实姓名:" %>
+      <%= f.text_field :name %>
+    </div>
+
+
+
+
+    <div class="field">
+    <%= f.label :avatar %>
+    <%= image_tag(@user.avatar_url(:thumb)) if @user.avatar? %>
+    <%= f.file_field :avatar %>
+    </div>
+    <% if (!@user.id) %>
+
+        <div class="field">
+          <%= f.label "密码:" %>
+          <%= password_field "user", "password" %>
+          <br/>
+
+        </div>
+
+        <div class="field">
+          <%= f.label "确认密码:" %>
+
+          <%= password_field "user", "password_confirmation" %>
+          <br/>
+        </div>
+    <% end %>
+    <% if @user.school
+         school_name = @user.school.name
+       else
+         school_name = ""
+       end
+    %>
+    <div class="field" id="matched_lawyer_list">
+      <%= f.label "学校" %>   <%= select("educational", "xueli", {"小学" => "1", "中学" => "2", "大学" => "3"}) %>
+      <input type="text" id = "school_code" name="school_code" value="<%= school_name %>">
+
+
+      <%= hidden_field(:user, :school_id) %>
+      <a id="school_select_btn" class="icon-sch txt-hidden" href="javascript:;">选择学校</a>
+    </div>
+    <div class="school_div">
+      <div id="school_dialog" title="school dialog">
+        <%= select(:area_edu, '', @province) %>
+        <p></p>
+
+        <div id="a_div">
+          <div id="school_content">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="field">
+      <%= f.label "自我介绍:" %>
+      <br/>
+      <%= f.text_area :introduce %>
+    </div>
+    <div class="actions">
+      <%= f.submit "创建账号" %>
+    </div>
+<% end %>
+
+<script>
+    $(function () {
+        $("#area_edu_").change(function () {
+            $.ajax({
+                type:"POST",
+                url:"/cms/users/school_ajax",
+                data:"province_id=" + this.value
+            });
+            return true;
+        });
+    })
+
+
+    // increase the default animation speed to exaggerate the effect
+    $.fx.speeds._default = 1000;
+
+    $(function () {
+        $("#school_dialog").dialog({
+            autoOpen:false,
+            show:"blind",
+            hide:"explode"
+        });
+
+        $("#school_select_btn").click(function () {
+            $("#school_dialog").dialog("open");
+            $("#area_edu_").get(0).options[0].selected = true;
+            $("#area_edu_").trigger("change");
+            return false;
+        });
+    });
+
+
+</script>
+

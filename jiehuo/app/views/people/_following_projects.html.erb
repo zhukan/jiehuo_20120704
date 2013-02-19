@@ -1,0 +1,12 @@
+<h2>关注<span> <%=h @following_projects_count%> 门学科</span></h2>
+<ul class="user_focus clearfix">
+  <% following_projects.each do |project|%>
+      <li>
+        <div class="user_xk">
+          <a href="/projects"><%=h project.project_base.name %></a>
+          <br/><%= show_project_asks_count(project.asks_count) %>
+        </div>
+        <%= button_followed_project(@current_user_id,project.project_base.project_id)%>
+      </li>
+  <% end %>
+</ul>

@@ -1,0 +1,36 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Email</th>
+    <th>Name</th>
+    <th>学校</th>
+
+    <th>Introduce</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.user_id %></td>
+    <td><%= user.email %></td>
+    <td><%= user.name %></td>
+    <td> <%= user.school.name %> </td>
+
+
+    <td><%= user.introduce %></td>
+
+    <td><%= link_to 'Show', cms_user_path(user) %></td>
+    <td><%= link_to 'Edit', edit_cms_user_path(user) %></td>
+    <td><%= link_to 'Destroy', cms_user_path(user), confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_cms_user_path %>

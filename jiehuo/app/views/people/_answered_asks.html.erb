@@ -1,0 +1,44 @@
+<div class="usert">
+  <ul class="u_tit">
+    <li><a href="/people/<%=h @person.user_base.user_id%>" id="a_set_asks">出过(<%=h @person.set_asks_count%>)</a></li>
+    <li class="u_first">答过(<%=h @person.answered_asks_count%>)</li>
+    <li><a href="javascript:void(0);" id="a_favorites_asks">收藏(<%=h @person.favorites_asks_count%>)</a></li>
+  </ul>
+</div>
+<%if @answered_asks.empty?%>
+    TA还没有回答过任何问题
+<%else%>
+    <ul class="list_title clearfix" id="ul_answered_asks">
+      <% @answered_asks.each do |ask| %>
+          <%= render(:partial =>'ask',:object => ask) %>
+      <% end %>
+    </ul>
+    <input type="hidden" name="page_num" value="0" id="page_num">
+    <div class="listmore"><a href="javascript:void(0);" id="more_answered_asks"><img src="/assets/more.jpg" border="0"/></a></div>
+<%end%>
+
+<script type="text/javascript">
+    $(function(){
+        $('#page_num').attr("value",0);
+
+        $("#more_answered_asks").click(function () {
+            var pagenum = Number($('#page_num').val());
+            $.ajax({
+                type:"get",
+                url:"/people/more_answered_asks/<%=h @last_ask_id%>/<%=h @user_id%>",
+                data:"pagenum=" + pagenum,
+                success:function(){
+                    $('#page_num').attr("value",pagenum+1)
+                }
+            });
+        });
+
+        $("#a_favorites_asks").click(function () {
+            $.ajax({
+                type:"get",
+                url:"/people/favorites_asks/<%=h @user_id%>",
+                data:"pagenum=" + 0
+            });
+        });
+    });
+</script>

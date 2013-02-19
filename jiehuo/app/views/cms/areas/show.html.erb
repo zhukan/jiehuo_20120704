@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Area:</b>
+  <%= @area.area_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @area.name %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @area.creator %>
+</p>
+
+<p>
+  <b>Modifier:</b>
+  <%= @area.modifier %>
+</p>
+
+
+<%= link_to 'Edit', edit_cms_area_path(@area) %> |
+<%= link_to 'Back', cms_areas_path %>

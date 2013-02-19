@@ -1,0 +1,50 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ask_id: 18
+  body: MyText
+  body_item: MyText
+  ask_type: MyText
+  result: MyText
+  comment: MyText
+  modifier: MyString
+  user_id: 1
+
+two:
+  ask_id: 1
+  body: MyText
+  body_item: MyText
+  ask_type: MyText
+  result: MyText
+  comment: MyText
+  modifier: MyString
+  user_id: 1
+
+three:
+    ask_id: 25
+    body: MyText
+    body_item: MyText
+    ask_type: MyText
+    result: MyText
+    comment: MyText
+    modifier: MyString
+    user_id: 1
+four:
+    ask_id: 22
+    body: MyText
+    body_item: MyText
+    ask_type: MyText
+    result: MyText
+    comment: MyText
+    modifier: MyString
+    user_id: 1
+five:
+    ask_id: 21
+    body: MyText
+    body_item: MyText
+    ask_type: MyText
+    result: MyText
+    comment: MyText
+    modifier: MyString
+    user_id: 1
+

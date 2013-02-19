@@ -1,0 +1,904 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_original {
+    background-image: url('../关注更多的考试_files/u0_original.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:60px;
+    top:20px;
+    width:510px;
+    height:360px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:516px;
+    height:366px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:172px;
+    width:506px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:60px;
+    top:20px;
+    width:510px;
+    height:360px
+}
+
+.u2 {
+    position:absolute;
+    left:101px;
+    top:64px;
+    width:80px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_line {
+    background-image: url('../关注更多的考试_files/u3_line.png');
+}
+
+.u3_line {
+    position:absolute;
+    left:60px;
+    top:55px;
+    width:510px;
+    height:3px;
+}
+
+.u3 {
+    position:absolute;
+    left:60px;
+    top:55px;
+    width:510px;
+    height:3px
+}
+
+.u4 {
+    position:absolute;
+    left:92px;
+    top:28px;
+    width:100px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_original {
+    background-image: url('../关注更多的考试_files/u5_original.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:71px;
+    top:29px;
+    width:19px;
+    height:19px;
+}
+
+#u5_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:19px;
+    height:19px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:15px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:71px;
+    top:29px;
+    width:19px;
+    height:19px
+}
+
+.u7_original {
+    background-image: url('../关注更多的考试_files/u7_original.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:84px;
+    top:69px;
+    width:10px;
+    height:10px;
+}
+
+#u7_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:16px;
+    height:16px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:84px;
+    top:69px;
+    width:10px;
+    height:10px
+}
+
+.u9_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:191px;
+    top:120px;
+    width:80px;
+    height:20px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:191px;
+    top:120px;
+    width:80px;
+    height:20px
+}
+
+.u11_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:99px;
+    top:273px;
+    width:80px;
+    height:20px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:99px;
+    top:273px;
+    width:80px;
+    height:20px
+}
+
+.u13_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:191px;
+    top:273px;
+    width:80px;
+    height:20px;
+}
+
+#u13_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:191px;
+    top:273px;
+    width:80px;
+    height:20px
+}
+
+.u15_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:99px;
+    top:333px;
+    width:80px;
+    height:20px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:99px;
+    top:333px;
+    width:80px;
+    height:20px
+}
+
+.u17_original {
+    background-image: url('../关注更多的考试_files/u17_original.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:105px;
+    top:150px;
+    width:180px;
+    height:80px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:86px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:105px;
+    top:150px;
+    width:180px;
+    height:80px
+}
+
+.u19_original {
+    background-image: url('../关注更多的考试_files/u19_original.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:128px;
+    top:140px;
+    width:13px;
+    height:10px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:19px;
+    height:16px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:128px;
+    top:140px;
+    width:13px;
+    height:10px
+}
+
+.u21 {
+    position:absolute;
+    left:101px;
+    top:250px;
+    width:80px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_original {
+    background-image: url('../关注更多的考试_files/u7_original.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:84px;
+    top:255px;
+    width:10px;
+    height:10px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:16px;
+    height:16px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:84px;
+    top:255px;
+    width:10px;
+    height:10px
+}
+
+.u24 {
+    position:absolute;
+    left:101px;
+    top:309px;
+    width:80px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_original {
+    background-image: url('../关注更多的考试_files/u7_original.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:84px;
+    top:314px;
+    width:10px;
+    height:10px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:16px;
+    height:16px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:-3px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:84px;
+    top:314px;
+    width:10px;
+    height:10px
+}
+
+.u27_line {
+    background-image: url('../关注更多的考试_files/u27_line.png');
+}
+
+.u27_line {
+    position:absolute;
+    left:115px;
+    top:200px;
+    width:160px;
+    height:3px;
+}
+
+.u27 {
+    position:absolute;
+    left:115px;
+    top:200px;
+    width:160px;
+    height:3px
+}
+
+.u28_original {
+    background-image: url('../关注更多的考试_files/u28_original.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:115px;
+    top:205px;
+    width:40px;
+    height:20px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:46px;
+    height:26px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:36px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28 {
+    position:absolute;
+    left:115px;
+    top:205px;
+    width:40px;
+    height:20px
+}
+
+.u30 {
+    position:absolute;
+    left:205px;
+    top:206px;
+    width:70px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31 {
+    position:absolute;
+    left:117px;
+    top:161px;
+    width:160px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:99px;
+    top:87px;
+    width:80px;
+    height:20px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32 {
+    position:absolute;
+    left:99px;
+    top:87px;
+    width:80px;
+    height:20px
+}
+
+.u34_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:191px;
+    top:87px;
+    width:80px;
+    height:20px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34 {
+    position:absolute;
+    left:191px;
+    top:87px;
+    width:80px;
+    height:20px
+}
+
+.u36_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:284px;
+    top:87px;
+    width:80px;
+    height:20px;
+}
+
+#u36_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36 {
+    position:absolute;
+    left:284px;
+    top:87px;
+    width:80px;
+    height:20px
+}
+
+.u38_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:377px;
+    top:87px;
+    width:80px;
+    height:20px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38 {
+    position:absolute;
+    left:377px;
+    top:87px;
+    width:80px;
+    height:20px
+}
+
+.u40_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:469px;
+    top:87px;
+    width:80px;
+    height:20px;
+}
+
+#u40_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:469px;
+    top:87px;
+    width:80px;
+    height:20px
+}
+
+.u42_original {
+    background-image: url('../关注更多的考试_files/u9_original.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:99px;
+    top:120px;
+    width:80px;
+    height:20px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:26px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42 {
+    position:absolute;
+    left:99px;
+    top:120px;
+    width:80px;
+    height:20px
+}
+

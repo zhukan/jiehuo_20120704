@@ -1,0 +1,4 @@
+<p>您好, <%= @resource.email %></p>
+<%=@resource.inviter%>邀请你加入解惑网，请您点击此链接注册:
+<p><%= link_to accept_invitation_url(@resource, :invitation_token => @resource.invitation_token).to_s, accept_invitation_url(@resource, :invitation_token => @resource.invitation_token) %></p>
+

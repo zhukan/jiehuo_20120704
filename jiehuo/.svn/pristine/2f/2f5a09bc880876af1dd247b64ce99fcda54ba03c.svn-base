@@ -1,0 +1,143 @@
+<%= form_for @user, :url => "/user_sessions/register_create", :method => "post", :html => {:autocomplete => "off"} do |f| %>
+
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2> 注册时出现<%= pluralize(@user.errors.count, "") %> 个问题</h2>
+
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="page">
+      <div class="reg_bg">
+        <div class="reg_left">
+          <div class="reg_logo"><img src="/assets/reg_logo.jpg" border="0"/></div>
+          <div class="reg_box">
+            <table width="500" border="0" cellspacing="9" cellpadding="0">
+              <tr>
+                <th><span>*</span>我的邮箱</th>
+                <td>
+                  <%= f.text_field :email, :class => "reg_text" %>
+                  <div id="1" style="display: none;"></div>
+                  <% if flash[:notice]&& flash[:notice]=="exist_email" %>
+                      <label class="error" id="exist_email" style="color: red;" for="user_email" generated="true">电子邮件已被注册</label>
+                  <% end %>
+                </td>
+
+                <td>&nbsp; </td>
+              </tr>
+              <tr>
+                <th><span>*</span>创建密码<%= @current_user_name %></th>
+                <td>
+                  <%= password_field :user, :password, :class => "reg_text" %>
+                  <div id="2" style="display: none;"></div>
+                </td>
+
+              </tr>
+              <tr>
+                <th><span>*</span>重复密码</th>
+                <td>
+                  <%= password_field :user, :password_confirmation, :class => "reg_text" %>
+                  <div style="display: none;"></div>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span>*</span>名称</th>
+                <td>
+
+                  <%= f.text_field :name, :class => "reg_text" %>
+                  <div style="display: none;"></div>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span></span>性别</th>
+                <td>
+                  <ul class="nvtitle">
+                    <li><%= radio_button("user", "sex", "M", :checked => true, :class => "reg_radio") %>男</li>
+                    <li><%= radio_button("user", "sex", "F", :class => "reg_radio") %>女</li>
+                  </ul>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span>*</span>选择学校</th>
+                <td>
+                  <%= f.text_field :school_text, :class => "reg_text", :readonly => "readonly" %>
+                  <%= hidden_field(:user, :school_id) %>
+                  <input type="button" id="school_select_btn" class="reg_btn" name="" value=""/>
+
+                  <div id="user_reg_school_text_error" style="display: none;"></div>
+                  <div class="school_div">
+                    <%= render "share/select_school" %>
+                  </div>
+
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span></span>自我介绍</th>
+                <td>
+                  <%= f.text_area :introduce, :class => "reg_in", :cols => 30, :rows => 5 %>
+                </td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th><span>*</span>验证码</th>
+                <td>
+                  <%= captcha_tag :style => "position:relative; right:65px " %>
+                  <input type="text" class="reg_yzm" name="captcha" value=""/>
+                </td>
+                <% if flash[:notice] && flash[:notice] =="validate_code" %>
+                  <tr>
+                    <th></th>
+                    <td style="color: red;">验证码错误</td>
+                  </tr>
+              <% end %>
+              <% if flash[:notice]&& flash[:notice]=="successfully" %>
+                  <h1><label style="align:center;color:red;" for="user_email" generated="true">注册用户成功!</label></h1>
+              <% end %>
+              </tr>
+              <tr>
+                <th></th>
+                <td>
+                  <ul class="reg_retitle">
+                    <li>
+                      <input type="submit" class="reg_reg" name="" value=""/>
+                    </li>
+                    <li><a href="javascript:openRegXieyi()">《解惑服务使用协议》</a></li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="reg_right">
+          <h1>已有解惑帐号？<br/>
+            <%= button_to_function "", "signin()", :class => "btn08" %>
+          </h1>
+          <ul class="rrtitle clearfix">
+            <li><a href="#">解惑网的目标用户群体是那些人？</a><br/>解惑网目前的目标人群是在校的初中和高中学生，未来随着科目的增多，会逐步服务于更广泛的人群，如计算机考试，会计类考试人群等</li>
+            <li><a href="#">你能在解惑做什么？</a><br/>解惑网定位于永远在线的答疑老师，只要你有不明白的考题需要询问，解惑网能凝聚互联网的力量，群策群力的给你解答，你在这里得到的不仅仅是一个答案，更主要是在这里学习到各种解题思路
+            </li>
+            <li><a href="#">解惑中有哪些题目？</a><br/>注册后你就知道啦！～</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<% end %>
+<script>
+    function openRegXieyi() {
+        window.open('/xieyi.html', '协议', 'height=1000,width=1000,top=0,left=0,toolbar=no,menubar=no,scrollbars=yes, resizable=no,location=no, status=no');
+
+    }
+</script>
+

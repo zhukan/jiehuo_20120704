@@ -1,0 +1,78 @@
+<% asks.each do |ask| %>
+    <li id="li_ask<%= ask.ask_id %>">
+      <div class="list clearfix">
+        <div class="list_l">
+          <h1>题干 </h1>
+
+          <h2>
+            <%= jiehuo_simple_format h ask.body %>
+            <% if (ask.image_url) %>
+                <br/>
+                <%= image_tag(ask.image_url(:ask_image_size)) %>
+            <% end %>
+            <% if {"1" => "单选", "2" => "多选"}.has_key?(ask.ask_type) %>
+                <br>
+                <% body_items =ask.body_item
+                   a = ("A、".."Z、").to_a
+                   body_items_array = body_items.split("[split]")
+                   body_items_array.delete("")
+                %>
+                <% body_items_array.each_with_index do |body_item, i| %>
+                    <%= jiehuo_simple_format h a[i]+body_item %>
+                    <br>
+                <% end %>
+            <% end %>
+          </h2>
+
+
+          <h1>答案</h1>
+
+          <div class="list_an">
+            <h3 id="h3_home_see_result_<%= ask.ask_id %>">查看出题者给出的答案
+              <a href="javascript:show_result('h3_home_see_result_<%= ask.ask_id %>','<%= jiehuo_simple_format h ask.result.gsub("|", "  ") %>');" id="home_see_result_<%= ask.ask_id %>">点击这里</a>
+            </h3>
+          </div>
+        </div>
+        <div class="list_r">
+          <h1>
+            <a href="/people/<%= ask.user.user_id %>"><%= image_tag(ask.user.avatar_url(:mid), :title => ask.user.name) %></a>
+          </h1>
+
+          <h2><%= a_favorite_ask(current_user.id, ask.ask_id) %><br/></h2>
+        </div>
+      </div>
+
+      <div class="bc">
+        <div class="bc_top"><img src="../assets/bg_bct.jpg" border="0"/></div>
+        <div class="bc_main">
+          <div class="nr1">
+            <div class="bcb">补充：</div>
+            <div class="bcn"><%= jiehuo_simple_format h ask.comment %></div>
+          </div>
+        </div>
+      </div>
+      <div class="dr">
+        <div class="drm"><%= @redis_answer_result_info_count[ask.ask_id.to_s] %>
+          位同学解答了此题，<%= @redis_answer_comment_info_count[ask.ask_id.to_s] %>
+          位同学写下了他们的解题思路，<%= @redis_answer__discuss_info_count[ask.ask_id.to_s] %>位同学参与了讨论
+        </div>
+        <div class="btn03">
+          <a href="/asks/<%= ask.id %>"><img src="../assets/btn3.jpg" border="0"/></a>
+        </div>
+      </div>
+    </li>
+
+<% end %>
+
+<script>
+    function show_result(id, result) {
+        $("#" + id).html(result);
+
+    }
+    $(function () {
+        $('#home_see_result').click(function () {
+            $('#h3_home_see_result').html($('#h3_home_see_result').result);
+        });
+    });
+
+</script>

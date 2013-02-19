@@ -1,0 +1,66 @@
+<HTML><HEAD>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet">
+<link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet">
+<link href="在线题库社区_files/axurerp_pagespecificstyles.css" type="text/css" rel="stylesheet">
+<!--[if IE 6]>
+<link href="在线题库社区_files/axurerp_pagespecificstyles_ie6.css" type="text/css" rel="stylesheet">
+<![endif]-->
+<SCRIPT src="resources/scripts/jquery-1.4.2.min.js"></SCRIPT>
+<SCRIPT src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></SCRIPT>
+<SCRIPT src="resources/scripts/axurerp_beforepagescript.js"></SCRIPT>
+<SCRIPT src="resources/scripts/messagecenter.js"></SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="main_container">
+
+<DIV id=u0 class="u0" >
+<DIV id=u0_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:18px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">2）用户行为模型</span></p></DIV></DIV>
+<DIV id=u1 class="u1" >
+<DIV id=u1_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 每个学科都隶属一个领域</span></p></DIV></DIV>
+<DIV id=u2 class="u2" >
+<DIV id=u2_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 每道题目都隶属于一个学科，每道题目包含1个或多个该学科下的知识点</span></p></DIV></DIV>
+<DIV id=u3 class="u3" >
+<DIV id=u3_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:18px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">3）考题索引</span></p></DIV></DIV>
+<DIV id=u4_line class="u4_line"></DIV>
+
+<IMG id=u4 src="resources/images/transparent.gif" class="u4">
+
+<DIV id=u5_line class="u5_line"></DIV>
+
+<IMG id=u5 src="resources/images/transparent.gif" class="u5">
+
+<DIV id=u6_container class="u6_container">
+<DIV id="u6_img" class="u6_original"></DIV>
+<DIV id=u7 class="u7" >
+<DIV id=u7_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u6 src="resources/images/transparent.gif" class="u6"    >
+
+<DIV id=u8_container class="u8_container">
+<DIV id="u8_img" class="u8_original"></DIV>
+<DIV id=u9 class="u9" >
+<DIV id=u9_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u8 src="resources/images/transparent.gif" class="u8"    >
+
+<DIV id=u10 class="u10" >
+<DIV id=u10_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:18px;font-weight:bold;font-style:normal;text-decoration:none;color:#333333;">1）什么考题会出现在我们网站上</span></p></DIV></DIV>
+<DIV id=u11 class="u11" >
+<DIV id=u11_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 一般的题目，在辅导书上非常常见的题目，不管是老师还是学生都不会放到我们这个网站上来，这些题目学生经常能在辅导书上看到，老师和学生们已经用的太多，他们没有原动力来把考题放到我们网站上</span></p><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 对于老师：他们应该能在我们这里实验他们的新题型，新题目，出一些书上不常见的题目，可以放到社区里来，因为这里有很多的学生，会先做题目，他可以看到题目的效果</span></p><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 对于学生，他们可能在某些资料包括辅导书上看到一些他们感觉比较新颖的，或者比较难的题目，可能看了答案也没有回答出来的题目，他们出到这个社区里面来，通过别的同学的解答，以及交流，他能明白题目</span></p><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#FF0000;">&#149;理由：对于学生，一般的题目，在参考书上做肯定比在网上做效果好，容易演算等，但通过社区形式也有优势，优势在于能跟一群有共同目标或者爱好的人一起交流，交流是社区的核心，SO，题库社区，重在交流，交流的原动力不在于普通都已经被人做烂的题目中，而在于新颖的，疑难的题目</span></p></DIV></DIV>
+<DIV id=u12_line class="u12_line"></DIV>
+
+<IMG id=u12 src="resources/images/transparent.gif" class="u12">
+
+<DIV id=u13 class="u13" >
+<DIV id=u13_rtf><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 用户群体：1）需要出题的老师们，2）学生</span></p><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 老师来我们网站是需要是有出题需求，他们能在我们网站上试验自己的新题目，并能得到其他老师新颖的题型或题目</span></p><p style="text-align:left;"><span style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;text-decoration:none;color:#333333;">&#149; 学生来我们网站，他们在做题的时候，遇到了一些不能解答的题目，有些甚至看了答案都不知道为什么，他们来我们网站是为了把题目出出来，求助</span></p></DIV></DIV></DIV>
+<DIV class=preload>
+<img src="在线题库社区_files/u4_line.png" width="1" height="1"/>
+<img src="在线题库社区_files/u5_line.png" width="1" height="1"/>
+<img src="在线题库社区_files/u6_original.png" width="1" height="1"/>
+<img src="在线题库社区_files/u8_original.png" width="1" height="1"/>
+<img src="在线题库社区_files/u12_line.png" width="1" height="1"/></DIV>
+</BODY>
+<SCRIPT src="resources/scripts/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="在线题库社区_files/axurerp_pagespecificscript.js" charset="utf-8"></SCRIPT>

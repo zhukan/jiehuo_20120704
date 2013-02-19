@@ -1,0 +1,1 @@
+$('#asks_list').html("<%= j render :partial => "answered_asks", :object => @answered_asks %>");

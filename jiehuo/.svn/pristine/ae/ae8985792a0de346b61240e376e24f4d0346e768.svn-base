@@ -1,0 +1,5 @@
+<p id="notice"><%= notice %></p>
+
+
+<%= link_to 'Edit', edit_cms_domain_path(@cms_domain) %> <!--A此地@cms_domain修改为edit_cms_domain_path(@cms_domain)-->|
+<%= link_to 'Back', cms_domains_path %>
