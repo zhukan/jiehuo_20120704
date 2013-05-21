@@ -12,7 +12,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  host: 42.96.173.233
+  host: localhost
   database: iknow_development
   pool: 5
   username: root
@@ -30,7 +30,7 @@ test:
   pool: 5
   username: root
   password: "cancan1981"
-  host: 42.96.173.233
+  host: localhost
 
 production:
   adapter: mysql2
@@ -40,5 +40,5 @@ production:
   pool: 5
   username: root
   password: "cancan1981"
-  host: 42.96.173.233
+  host: localhost
 
